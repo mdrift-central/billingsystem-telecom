@@ -10,13 +10,20 @@
   overflow: initial;
   white-space: initial; }
 
-<<<<<<< HEAD
 .no-mrgn {
   margin: 0; }
 
 .mrgn-tp-10 {
   margin-top: 10px; }
-=======
+
+.addl-data-fup .text-normal {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer; }
+.addl-data-fup .icheckbox_minimal-blue, .addl-data-fup .iradio_minimal-blue {
+  margin-top: -3px;
+  margin-right: 5px; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {
@@ -33,6 +40,5 @@
   .submit-application .text-normal .icheckbox_minimal-blue, .submit-application .text-normal .iradio_minimal-blue {
     margin-top: -3px;
     margin-right: 5px; }
->>>>>>> 83cd16859c4563bcd7cfb14cbf4f1be5da8bf8a4
 
 /*# sourceMappingURL=style.css.map */

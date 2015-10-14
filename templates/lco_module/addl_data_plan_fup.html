@@ -9,6 +9,9 @@
 
   <link rel="stylesheet" href="../../static/css/library/select2.min.css">
 
+  <!-- <link rel="stylesheet" href="../../static/css/library/iCheck-minimal.css"> -->
+  <link rel="stylesheet" href="../../static/css/library/iCheck-minimal-blue.css">
+
   <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
   <link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
 
@@ -115,8 +118,8 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="#">Subscriber Recharge</a></li>
-                <li class="active"><a href="#">Package Change</a></li>
-                <li><a href="#">Addl. Data Plan for FUP</a></li>
+                <li><a href="#">Package Change</a></li>
+                <li class="active"><a href="#">Addl. Data Plan for FUP</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -153,10 +156,10 @@
         </section>
       </aside>
 
-      <div class="content-wrapper package-change">
+      <div class="content-wrapper addl-data-fup">
         <section class="content-header">
           <h1>
-            Package Change
+            Additional Data Plan for FUP
           </h1>
           <ol class="breadcrumb">
             <li class="active"><a href="#"><i class="fa fa-ticket"></i>Subscriber Top Up</a></li>
@@ -173,7 +176,7 @@
                     <div class="col-md-5">
                       <div class="form-group">
                         <label>Subscriber</label>
-                        <select class="form-control select" style="width: 100%;" id="pkg-chng-slt-subscbr">
+                        <select class="form-control select" style="width: 100%;" id="addl-data-slt-subscbr">
                           <option selected="selected" value="">Select User</option>
                           <option value="001">ritwik.s.balram, #589652</option>
                           <option value="002">rahul.george, #1589632</option>
@@ -190,37 +193,10 @@
                         </select>
                       </div>
                     </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label>New Package</label>
-                        <select class="form-control select" style="width: 100%;" id="pkg-chng-new-pkg">
-                          <option selected="selected" value="">Select Package</option>
-                          <option value="001">512KBBHULweb</option>
-                          <option value="002">1024KBBHULweb</option>
-                          <option value="003">2048KBBHULweb</option>
-                          <option value="004">4096KBBHULweb</option>
-                          <option value="005">FUP1MBPS_20GB</option>
-                          <option value="006">FUP2MBPS_20GB</option>
-                          <option value="007">FUP1MBPS_10GB</option>
-                          <option value="008">FUP4MBPS_40GB</option>
-                          <option value="009">FUP4MBPS_30GB</option>
-                          <option value="010">FUP10MBPS_40GB</option>
-                          <option value="011">FUP10MBPS_60GB</option>
-                          <option value="012">FUP10MBPS_100GB</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="form-group">
-                        <label>&nbsp;</label>
-                        <div class="clearfix"></div>
-                        <button type="button" class="btn bg-maroon btn-block btn-flat" id="chng-pkg-btn">Change Package</button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div class="box box-primary" id="pkg-chng-subscbr-dtls">
+              <div class="box box-primary" id="addl-data-subscbr-dtls">
                 <div class="box-header with-border">
                   <h3 class="box-title">Subscriber Details</h3>
                 </div>
@@ -228,65 +204,72 @@
                   <table class="table table-hover">
                     <tbody>
                       <tr>
-                        <td><strong>Subscriber Name</strong></td>
-                        <td>Rahul George</td>
                         <td><strong>Subscriber ID</strong></td>
                         <td>1589632</td>
-                      </tr>
-                      <tr>
                         <td><strong>User Name</strong></td>
                         <td>rahul.george</td>
-                        <td><strong>Status</strong></td>
-                        <td>Suspended</td>
                       </tr>
                       <tr>
+                        <td><strong>Subscriber Name</strong></td>
+                        <td>Rahul George</td>
                         <td><strong>Plan</strong></td>
                         <td>FUP4Mbps_30GB</td>
-                        <td><strong>Expiry</strong></td>
-                        <td>30/10/2015 10:30:20</td>
                       </tr>
                       <tr>
-                        <td><strong>Renewal Fee</strong></td>
-                        <td>920.75</td>
-                        <td><strong>Account Balance</strong></td>
-                        <td>0.56</td>
+                        <td><strong>Current Limit</strong></td>
+                        <td>30000</td>
+                        <td><strong>Current Usage</strong></td>
+                        <td>28000</td>
                       </tr>
                       <tr>
-                        <td><strong>Contact No</strong></td>
-                        <td>+91 7025 143 544</td>
-                        <td></td>
+                        <td><strong>Current Bandwidth</strong></td>
+                        <td>28000k</td>
+                        <td><strong></strong></td>
                         <td></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div class="box box-danger" id="pkg-chng-rqst-dtls">
+              <div class="box box-primary" id="addl-data-pkg-dtls">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Package Change Request Details</h3>
+                  <h3 class="box-title">Select FUP data extention pack</h3>
+                </div>
+                <div class="box-body">
+                  <div class="table-responsive">
+                    <table class="table no-margin">
+                      <thead>
+                        <tr>
+                          <th>Additional Volume</th>
+                          <th>Package Fee</th>
+                          <th>Remarks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label class="text-normal"><input type="radio" name="r1" class="minimal" >5GB</label>
+                          </td>
+                          <td>169.86/-</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="text-normal"><input type="radio" name="r1" class="minimal" >10GB</label>
+                          </td>
+                          <td>283.86/-</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <div class="alert alert-danger alert-dismissable no-mrgn mrgn-tp-10">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    <strong>Already another request existing for this user</strong><br>
-                    Applying the new package will overwrite the existing request.
+                    <strong>Cannot apply additional data plan. FUP limit not over</strong>
                   </div>
                 </div>
-                <div class="box-body no-padding">                  
-                  <table class="table table-hover">
-                    <tbody>
-                      <tr>
-                        <td><strong>Previous submit date</strong></td>
-                        <td>06-Oct-2015</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Previous scheduled execution date</strong></td>
-                        <td>10-Oct-2015</td>
-                      </tr>
-                      <tr>
-                        <td><strong>Previous selected package</strong></td>
-                        <td>FUP4Mbps_30GB</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="box-footer">
+                  <button type="button" class="btn btn-maroon btn-flat">Add Data Plan</button>
                 </div>
               </div>
             </div>
@@ -305,18 +288,24 @@
   <script src="../../static/js/library/bootstrap.js"></script>
   <script src="../../static/js/library/jquery.slimscroll.min.js"></script>
   <script src="../../static/js/library/select2.full.min.js"></script>
+  <script src="../../static/js/library/icheck.min.js"></script>
   <script src="../../static/js/library/app.min.js"></script>
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
-      $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').hide();
-      $('#pkg-chng-slt-subscbr').change(function(event) {
+      $('#addl-data-subscbr-dtls, #addl-data-pkg-dtls').hide();
+      $('#addl-data-slt-subscbr').change(function(event) {
         var getSelectedVal = $(this).find('option:selected').val();
         if(getSelectedVal !== '') {
-          $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').show();
+          $('#addl-data-subscbr-dtls, #addl-data-pkg-dtls').show();
         } else {
-          $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').hide();
+          $('#addl-data-subscbr-dtls, #addl-data-pkg-dtls').hide();
         }
+      });
+
+      $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass: 'iradio_minimal-blue'
       });
     });
   </script>
