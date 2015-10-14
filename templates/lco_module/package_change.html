@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kerala Vision LCO Dashboard</title>
+  <title>Kerala Vision LCO Change Package</title>
   <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
   <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/css/library/ionicons.css">
@@ -114,8 +114,8 @@
                 <i class="fa fa-angle-right pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="#">Subscriber Recharge</a></li>
-                <li><a href="#">Package Change</a></li>
+                <li><a href="#">Subscriber Recharge</a></li>
+                <li class="active"><a href="#">Package Change</a></li>
                 <li><a href="#">Addl. Data Plan for FUP</a></li>
               </ul>
             </li>
@@ -156,28 +156,24 @@
       <div class="content-wrapper subscriber-recharge">
         <section class="content-header">
           <h1>
-            Subscriber Recharge
+            Package Change
           </h1>
           <ol class="breadcrumb">
             <li class="active"><a href="#"><i class="fa fa-ticket"></i>Subscriber Top Up</a></li>
-            <li>Subscriber Recharge</li>
+            <li>Package Change</li>
           </ol>
         </section>
 
         <section class="content">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-md-12">
               <div class="box box-primary">
                 <div class="box-body">
-                  <div class="alert alert-success alert-dismissable" id="topup-success">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    Recharge of Rs.920.75 for subscriber rahul.george is succesful. Your current balance is Rs.12500.00
-                  </div>
                   <div class="row">
-                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="col-md-5">
                       <div class="form-group">
                         <label>Subscriber</label>
-                        <select class="form-control select" id="topup-select-subscriber">
+                        <select class="form-control select" style="width: 100%;" id="pkg-chng-slt-subscbr">
                           <option selected="selected" value="">Select User</option>
                           <option value="001">ritwik.s.balram, #589652</option>
                           <option value="002">rahul.george, #1589632</option>
@@ -194,23 +190,37 @@
                         </select>
                       </div>
                     </div>
-                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="col-md-5">
                       <div class="form-group">
-                        <label>Amount</label>
-                        <input type="text" class="form-control" value="">
+                        <label>New Package</label>
+                        <select class="form-control select" style="width: 100%;" id="pkg-chng-new-pkg">
+                          <option selected="selected" value="">Select Package</option>
+                          <option value="001">512KBBHULweb</option>
+                          <option value="002">1024KBBHULweb</option>
+                          <option value="003">2048KBBHULweb</option>
+                          <option value="004">4096KBBHULweb</option>
+                          <option value="005">FUP1MBPS_20GB</option>
+                          <option value="006">FUP2MBPS_20GB</option>
+                          <option value="007">FUP1MBPS_10GB</option>
+                          <option value="008">FUP4MBPS_40GB</option>
+                          <option value="009">FUP4MBPS_30GB</option>
+                          <option value="010">FUP10MBPS_40GB</option>
+                          <option value="011">FUP10MBPS_60GB</option>
+                          <option value="012">FUP10MBPS_100GB</option>
+                        </select>
                       </div>
                     </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="col-md-2">
                       <div class="form-group">
                         <label>&nbsp;</label>
                         <div class="clearfix"></div>
-                        <button type="button" class="btn btn-primary btn-block" id="subscriber-recharge-btn">Apply Recharge</button>
+                        <button type="button" class="btn bg-maroon btn-block btn-flat" id="chng-pkg-btn">Change Package</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="box box-primary" id="topup-subscriber-details">
+              <div class="box box-primary" id="pkg-chng-subscbr-dtls">
                 <div class="box-header with-border">
                   <h3 class="box-title">Subscriber Details</h3>
                 </div>
@@ -227,13 +237,13 @@
                         <td><strong>User Name</strong></td>
                         <td>rahul.george</td>
                         <td><strong>Status</strong></td>
-                        <td>1</td>
+                        <td>Suspended</td>
                       </tr>
                       <tr>
                         <td><strong>Plan</strong></td>
                         <td>FUP4Mbps_30GB</td>
-                        <td><strong>Expiry Date</strong></td>
-                        <td>30/10/2015</td>
+                        <td><strong>Expiry</strong></td>
+                        <td>30/10/2015 10:30:20</td>
                       </tr>
                       <tr>
                         <td><strong>Renewal Fee</strong></td>
@@ -246,6 +256,34 @@
                         <td>+91 7025 143 544</td>
                         <td></td>
                         <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="box box-danger" id="pkg-chng-rqst-dtls">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Package Change Request Details</h3>
+                  <div class="alert alert-danger alert-dismissable no-mrgn mrgn-tp-10">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <strong>Already another request existing for this user</strong><br>
+                    Applying the new package will overwrite the existing request.
+                  </div>
+                </div>
+                <div class="box-body no-padding">                  
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td><strong>Previous submit date</strong></td>
+                        <td>06-Oct-2015</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Previous scheduled execution date</strong></td>
+                        <td>10-Oct-2015</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Previous selected package</strong></td>
+                        <td>FUP4Mbps_30GB</td>
                       </tr>
                     </tbody>
                   </table>
@@ -271,7 +309,15 @@
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
-      
+      $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').hide();
+      $('#pkg-chng-slt-subscbr').change(function(event) {
+        var getSelectedVal = $(this).find('option:selected').val();
+        if(getSelectedVal !== '') {
+          $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').show();
+        } else {
+          $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').hide();
+        }
+      });
     });
   </script>
 </body>
