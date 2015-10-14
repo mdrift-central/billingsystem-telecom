@@ -6,6 +6,10 @@
   .navbar-nav > .user-menu > .dropdown-menu > li.user-header p {
     margin: 0; }
 
+.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a {
+  overflow: initial;
+  white-space: initial; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {

@@ -271,19 +271,7 @@
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
-      $('#topup-subscriber-details').hide();
-      $('#topup-success').hide();
-      $('#topup-select-subscriber').change(function(event) {
-        var getSelectedVal = $(this).find('option:selected').val();
-        if(getSelectedVal !== '') {
-          $('#topup-subscriber-details').show();
-        } else {
-          $('#topup-subscriber-details').hide();
-        }
-      });
-      $('#subscriber-recharge-btn').bind('click', function() {
-        $('#topup-success').show();
-      });
+      
     });
   </script>
 </body>
