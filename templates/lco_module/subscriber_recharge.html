@@ -177,7 +177,7 @@
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                       <div class="form-group">
                         <label>Subscriber</label>
-                        <select class="form-control select" id="topup-select-subscriber">
+                        <select class="form-control select" style="width: 100%;" id="rchrg-slt-subscbr">
                           <option selected="selected" value="">Select User</option>
                           <option value="001">ritwik.s.balram, #589652</option>
                           <option value="002">rahul.george, #1589632</option>
@@ -204,13 +204,13 @@
                       <div class="form-group">
                         <label>&nbsp;</label>
                         <div class="clearfix"></div>
-                        <button type="button" class="btn btn-primary btn-block" id="subscriber-recharge-btn">Apply Recharge</button>
+                        <button type="button" class="btn bg-maroon btn-block btn-flat" id="subscbr-rchrg-btn">Apply Recharge</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="box box-primary" id="topup-subscriber-details">
+              <div class="box box-primary" id="rchrg-subscbr-dtls">
                 <div class="box-header with-border">
                   <h3 class="box-title">Subscriber Details</h3>
                 </div>
@@ -271,17 +271,17 @@
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
-      $('#topup-subscriber-details').hide();
+      $('#rchrg-subscbr-dtls').hide();
       $('#topup-success').hide();
-      $('#topup-select-subscriber').change(function(event) {
+      $('#rchrg-slt-subscbr').change(function(event) {
         var getSelectedVal = $(this).find('option:selected').val();
         if(getSelectedVal !== '') {
-          $('#topup-subscriber-details').show();
+          $('#rchrg-subscbr-dtls').show();
         } else {
-          $('#topup-subscriber-details').hide();
+          $('#rchrg-subscbr-dtls').hide();
         }
       });
-      $('#subscriber-recharge-btn').bind('click', function() {
+      $('#subscbr-rchrg-btn').bind('click', function() {
         $('#topup-success').show();
       });
     });
