@@ -9,18 +9,17 @@
 	.box-title {
 		small {
 			font-size: 14px;
-    		font-weight: bold;
-        	margin-left: 5px;
+			font-weight: bold;
+			margin-left: 5px;
 		}
-
 	}
 	.text-normal {
-			font-size: 14px;
-			font-weight: 400;
-			cursor: pointer;
-			.icheckbox_minimal-blue, .iradio_minimal-blue {
-				margin-top: -3px;
-				margin-right: 5px;
-			}
+		font-size: 14px;
+		font-weight: 400;
+		cursor: pointer;
+		.icheckbox_minimal-blue, .iradio_minimal-blue {
+			margin-top: -3px;
+			margin-right: 5px;
 		}
+	}
 }
