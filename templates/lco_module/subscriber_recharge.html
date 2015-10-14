@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Kerala Vision LCO Dashboard</title>
-	<link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
-	<link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
-	<link rel="stylesheet" href="../../static/css/library/ionicons.css">
-	<link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
-	<link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
-	<link rel="stylesheet" href="../../static/css/custom/style.css">
-	<!--[if lt IE 9]>
+  <meta charset="UTF-8">
+  <title>Kerala Vision LCO Dashboard</title>
+  <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
+  <link rel="stylesheet" href="../../static/css/library/ionicons.css">
+
+  <link rel="stylesheet" href="../../static/plugins/select2/select2.min.css">
+
+  <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
+  <link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
+
+  <link rel="stylesheet" href="../../static/css/custom/style.css">
+  <!--[if lt IE 9]>
         <script src="../../static/js/library/html5shiv.js"></script>
         <script src="../../static/js/library/respond.js"></script>
     <![endif]-->
@@ -18,33 +22,55 @@
     <div class="wrapper">
 
       <header class="main-header">
-        <!-- Logo -->
         <a href="#" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>KV</b></span>
-          <!-- logo for regular state and mobile devices -->
           <span class="logo-lg">Kerala<b>Vision</b></span>
         </a>
-        <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
           </a>
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- User Account: style can be found in dropdown.less -->
-              <li class="dropdown user user-menu">
+              <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs">LCO Name</span>
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-danger">3</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <!-- User image -->
+                  <li class="header">You have 3 notifications</li>
+                  <li>
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-comments text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-yellow"></i> Request for plan change
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="hidden-xs">Adithya Cable Vision</span>
+                </a>
+                <ul class="dropdown-menu">
                   <li class="user-header">
                     <img src="../../static/images/dummyPlaceholder.jpg" class="img-circle" alt="User Image">
                     <p>
-                      LCO Name
-                      <small>Location</small>
+                      Adithya Cable Vision
+                      <small>Cherthala</small>
                     </p>
                   </li>
                   <li class="user-footer">
@@ -57,7 +83,6 @@
                   </li>
                 </ul>
               </li>
-              <!-- Control Sidebar Toggle Button -->
               <li>
                 <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off"></i></a>
               </li>
@@ -65,11 +90,9 @@
           </div>
         </nav>
       </header>
-      <!-- Left side column. contains the logo and sidebar -->
+
       <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-          <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="active">
@@ -104,40 +127,125 @@
                 <li><a href="#">AGP Revenue-Govt Subs</a></li>
               </ul>
             </li>
-            <li class="treeview">
+            <li>
               <a href="#">
-                <i class="fa fa-clipboard"></i>
-                <span>Reports</span>
-                <i class="fa fa-angle-right pull-right"></i>
+                <i class="fa fa-globe"></i>
+                <span>Users</span>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#">Subscribers</a></li>
-              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-comments"></i>
+                <span>CRM</span>
+              </a>
             </li>
             <li class="header">IMPORTANT LINKS</li>
             <li><a href="#"><i class="fa fa-chevron-circle-right text-yellow"></i><span>Submit Application</span></a></li>
             <li><a href="#"><i class="fa fa-chevron-circle-right text-aqua"></i><span>Application Status</span></a></li>
           </ul>
         </section>
-        <!-- /.sidebar -->
       </aside>
 
       <div class="content-wrapper subscriber-recharge">
         <section class="content-header">
           <h1>
-            Dashboard
-            <small>Control panel</small>
+            Subscriber Recharge
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+            <li class="active"><a href="#"><i class="fa fa-ticket"></i>Subscriber Top Up</a></li>
+            <li>Subscriber Recharge</li>
           </ol>
         </section>
 
         <section class="content">
           <div class="row">
-
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="box box-primary">
+                <div class="box-body">
+                  <div class="alert alert-success alert-dismissable" id="topup-success">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    Recharge of Rs.1000 for subscriber rahul.george is Suuceesful. Your current balance is 12500.
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                      <div class="form-group">
+                        <label>Subscriber</label>
+                        <select class="form-control select2" id="topup-select-subscriber">
+                          <option selected="selected" value="">Select User</option>
+                          <option value="001">ritwik.s.balram</option>
+                          <option value="002">rahul.george</option>
+                          <option value="003">abdul.samad</option>
+                          <option value="004">sachin.sharma</option>
+                          <option value="005">varun.rajeevan</option>
+                          <option value="006">nithin.krishnan</option>
+                          <option value="007">sooraj.kv</option>
+                          <option value="008">sijil.pv</option>
+                          <option value="009">vivek.elayidom</option>
+                          <option value="010">manoj.kallil</option>
+                          <option value="011">salil.varma</option>
+                          <option value="012">vivek.raj</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                      <div class="form-group">
+                        <label>Amount</label>
+                        <input type="text" class="form-control" value="">
+                      </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                      <div class="form-group">
+                        <label>&nbsp;</label>
+                        <div class="clearfix"></div>
+                        <button type="button" class="btn btn-primary btn-block" id="subscriber-recharge-btn">Apply Recharge</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box box-primary" id="topup-subscriber-details">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Subscriber Details</h3>
+                </div>
+                <div class="box-body no-padding">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td><strong>Subscriber Name</strong></td>
+                        <td>Rahul George</td>
+                        <td><strong>Subscriber ID</strong></td>
+                        <td>1589632</td>
+                      </tr>
+                      <tr>
+                        <td><strong>User Name</strong></td>
+                        <td>rahul.george</td>
+                        <td><strong>Status</strong></td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Plan</strong></td>
+                        <td>FUP4Mbps_30GB</td>
+                        <td><strong>Expiry Date</strong></td>
+                        <td>30/10/2015</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Renewal Fee</strong></td>
+                        <td>920.75</td>
+                        <td><strong>Account Balance</strong></td>
+                        <td>0.56</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Contact No</strong></td>
+                        <td>+91 7025 143 544</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
-
         </section>
       </div>
       <footer class="main-footer">
@@ -147,10 +255,29 @@
         Copyright &copy; 2014-2015
       </footer>
     </div>
-	
-	<script src="../../static/js/library/jquery-2.1.4.min.js"></script>
-	<script src="../../static/js/library/bootstrap.js"></script>
-	<script src="../../static/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-	<script src="../../static/js/library/app.min.js"></script>
+  
+  <script src="../../static/js/library/jquery-2.1.4.min.js"></script>
+  <script src="../../static/js/library/bootstrap.js"></script>
+  <script src="../../static/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+  <script src="../../static/plugins/select2/select2.full.min.js"></script>
+  <script src="../../static/js/library/app.min.js"></script>
+  <script>
+    $(function() {
+      $(".select2").select2();
+      $('#topup-subscriber-details').hide();
+      $('#topup-success').hide();
+      $('#topup-select-subscriber').change(function(event) {
+        var getSelectedVal = $(this).find('option:selected').val();
+        if(getSelectedVal !== '') {
+          $('#topup-subscriber-details').show();
+        } else {
+          $('#topup-subscriber-details').hide();
+        }
+      });
+      $('#subscriber-recharge-btn').bind('click', function() {
+        $('#topup-success').show();
+      });
+    });
+  </script>
 </body>
 </html>
