@@ -10,10 +10,29 @@
   overflow: initial;
   white-space: initial; }
 
+<<<<<<< HEAD
 .no-mrgn {
   margin: 0; }
 
 .mrgn-tp-10 {
   margin-top: 10px; }
+=======
+.submit-application .no-top-border {
+  border-top: none; }
+.submit-application .custom_wrng {
+  font-size: 12px;
+  font-weight: normal; }
+.submit-application .box-title small {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px; }
+.submit-application .text-normal {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer; }
+  .submit-application .text-normal .icheckbox_minimal-blue, .submit-application .text-normal .iradio_minimal-blue {
+    margin-top: -3px;
+    margin-right: 5px; }
+>>>>>>> 83cd16859c4563bcd7cfb14cbf4f1be5da8bf8a4
 
 /*# sourceMappingURL=style.css.map */
