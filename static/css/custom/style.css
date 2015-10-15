@@ -102,6 +102,10 @@ div.dataTables_filter {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
 
+.user-list table.dataTable thead > tr > th:first-of-type {
+  width: 1%;
+  padding-right: 0; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {
