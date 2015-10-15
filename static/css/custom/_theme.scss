@@ -57,3 +57,76 @@ div.dataTables_filter {
 		    padding-top: 6px;
 	}
 }
+
+
+.btn-ziggy {
+	background-clip: padding-box;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-position: 0 -100%;
+	background-size: 100% 200%;
+	background-color: white;
+	&.btn-default {
+		background-color: transparent;
+		border: solid 1px #ddd;
+		color: #444;
+		background-image: -webkit-linear-gradient(180deg, #f4f4f4, #f4f4f4 50%, transparent 50%, transparent);
+		background-image: -moz-linear-gradient(180deg, #f4f4f4, #f4f4f4 50%, transparent 50%, transparent);
+		background-image: linear-gradient(180deg, #f4f4f4, #f4f4f4 50%, transparent 50%, transparent);
+		&:hover {
+			color: #444;
+		}
+	}
+	&.btn-primary {
+		background-color: transparent;
+		border: solid 1px #367fa9;
+		color: #3c8dbc;
+		background-image: -webkit-linear-gradient(180deg, #3c8dbc, #3c8dbc 50%, transparent 50%, transparent);
+		background-image: -moz-linear-gradient(180deg, #3c8dbc, #3c8dbc 50%, transparent 50%, transparent);
+		background-image: linear-gradient(180deg, #3c8dbc, #3c8dbc 50%, transparent 50%, transparent);
+	}
+	&.btn-success {
+		background-color: transparent;
+		border: solid 1px #008d4c;
+		color: #00a65a;
+		background-image: -webkit-linear-gradient(180deg, #00a65a, #00a65a 50%, transparent 50%, transparent);
+		background-image: -moz-linear-gradient(180deg, #00a65a, #00a65a 50%, transparent 50%, transparent);
+		background-image: linear-gradient(180deg, #00a65a, #00a65a 50%, transparent 50%, transparent);
+	}
+	&.btn-info {
+		background-color: transparent;
+		border: solid 1px #00acd6;
+		color: #00c0ef;
+		background-image: -webkit-linear-gradient(180deg, #00c0ef, #00c0ef 50%, transparent 50%, transparent);
+		background-image: -moz-linear-gradient(180deg, #00c0ef, #00c0ef 50%, transparent 50%, transparent);
+		background-image: linear-gradient(180deg, #00c0ef, #00c0ef 50%, transparent 50%, transparent);
+	}
+	&.btn-danger {
+		background-color: transparent;
+		border: solid 1px #d73925;
+		color: #dd4b39;
+		background-image: -webkit-linear-gradient(180deg, #dd4b39, #dd4b39 50%, transparent 50%, transparent);
+		background-image: -moz-linear-gradient(180deg, #dd4b39, #dd4b39 50%, transparent 50%, transparent);
+		background-image: linear-gradient(180deg, #dd4b39, #dd4b39 50%, transparent 50%, transparent);
+	}
+	&.btn-warning {
+		background-color: transparent;
+		border: solid 1px #e08e0b;
+		color: #f39c12;
+		background-image: -webkit-linear-gradient(180deg, #f39c12, #f39c12 50%, transparent 50%, transparent);
+		background-image: -moz-linear-gradient(180deg, #f39c12, #f39c12 50%, transparent 50%, transparent);
+		background-image: linear-gradient(180deg, #f39c12, #f39c12 50%, transparent 50%, transparent);
+	}
+	&:hover {
+		color: white;
+		background-position: 0 0;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
