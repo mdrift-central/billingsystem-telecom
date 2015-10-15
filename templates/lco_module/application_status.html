@@ -20,82 +20,82 @@
       <body class="hold-transition fixed skin-blue sidebar-mini">
         <div class="wrapper">
 
-      <header class="main-header">
-        <a href="#" class="logo">
-          <span class="logo-mini"><b>KV</b></span>
-          <span class="logo-lg">Kerala<b>Vision</b></span>
-        </a>
-        <nav class="navbar navbar-static-top" role="navigation">
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
-          </a>
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-danger">3</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 3 notifications</li>
-                  <li>
-                    <ul class="menu">
+          <header class="main-header">
+            <a href="#" class="logo">
+              <span class="logo-mini"><b>KV</b></span>
+              <span class="logo-lg">Kerala<b>Vision</b></span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+              </a>
+              <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="label label-danger">3</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="header">You have 3 notifications</li>
                       <li>
-                        <a href="#">
-                          <div class="media">
-                            <div class="media-left">
-                              <i class="fa fa-comments text-yellow"></i>
-                            </div>
-                            <div class="media-body">
-                              Very long description here that may not fit into the page and may cause design problems
-                            </div>
-                          </div>
-                        </a>
+                        <ul class="menu">
+                          <li>
+                            <a href="#">
+                              <div class="media">
+                                <div class="media-left">
+                                  <i class="fa fa-comments text-yellow"></i>
+                                </div>
+                                <div class="media-body">
+                                  Very long description here that may not fit into the page and may cause design problems
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-user text-yellow"></i> Request for plan change
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-user text-red"></i> You changed your username
+                            </a>
+                          </li>
+                        </ul>
                       </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-yellow"></i> Request for plan change
-                        </a>
+                      <li class="footer"><a href="#">View all</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <span class="hidden-xs">Adithya Cable Vision</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="user-header">
+                        <img src="../../static/images/dummyPlaceholder.jpg" class="img-circle" alt="User Image">
+                        <p>
+                          Adithya Cable Vision
+                          <small>Cherthala</small>
+                        </p>
                       </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
+                      <li class="user-footer">
+                        <div class="pull-left">
+                          <a href="#" class="btn btn-default btn-flat">Profile</a>
+                        </div>
+                        <div class="pull-right">
+                          <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                        </div>
                       </li>
                     </ul>
                   </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-              </li>
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs">Adithya Cable Vision</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="user-header">
-                    <img src="../../static/images/dummyPlaceholder.jpg" class="img-circle" alt="User Image">
-                    <p>
-                      Adithya Cable Vision
-                      <small>Cherthala</small>
-                    </p>
-                  </li>
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                    </div>
+                  <li>
+                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off"></i></a>
                   </li>
                 </ul>
-              </li>
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off"></i></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+              </div>
+            </nav>
+          </header>
           <!-- Left side column. contains the logo and sidebar -->
           <aside class="main-sidebar">
             <!-- sidebar: style can be found in sidebar.less -->
@@ -153,7 +153,7 @@
             <!-- /.sidebar -->
           </aside>
 
-          <div class="content-wrapper submit-application">
+          <div class="content-wrapper application-status">
             <section class="content-header">
               <h1>
                 Application Status
@@ -167,152 +167,151 @@
 
             <section class="content">
 
-  <div class="box box-primary">
+              <div class="box box-primary">
                 <div class="box-header with-border">
+                <div class="form-group">
+                    <label class="col-sm-1 control-label pad-tp-6">Search</label>
+                    <div class="col-sm-11">
+                     <input class="form-control" id="searchbox">
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-            <div class="form-group">
-                      <label for="inputEmail3" class="col-sm-2 control-label">Form Number Search</label>
-                      <div class="col-sm-10">
-                       <input class="form-control" id="searchbox">
-                      </div>
-                    </div>
-                    </div>
-                    </div>
-
-              <div class="row">
-                <div class="col-xs-12">
-              <div class="box">
-                <div class="box-header">
-                  <h3 class="box-title">Online Forms</h3>
-                </div><!-- /.box-header -->
-                <div class="box-body">
-                  <table id="table_sortable" class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Form No.</th>
-                        <th>Applied Date</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Mobile</th>
-                        <th>Status</th>
-                        <th>Remarks</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>11979</td>
-                        <td>22-04-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11980</td>
-                        <td>21-02-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11981</td>
-                        <td>21-08-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11982</td>
-                        <td>25-09-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11983</td>
-                        <td>30-09-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11983</td>
-                        <td>30-09-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                       <tr>
-                        <td>11983</td>
-                        <td>30-09-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11979</td>
-                        <td>22-04-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11980</td>
-                        <td>21-02-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11979</td>
-                        <td>22-04-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>11990</td>
-                        <td>10-04-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div><!-- /.box-body -->
-              </div>
+             <div class="row">
+              <div class="col-xs-12">
+                <div class="box">
+                  <div class="box-header">
+                    <h3 class="box-title">Online Forms</h3>
+                  </div><!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="table_sortable" class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Form No.</th>
+                          <th>Applied Date</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Mobile</th>
+                          <th>Status</th>
+                          <th>Remarks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>11979</td>
+                          <td>22-04-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11980</td>
+                          <td>21-02-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11981</td>
+                          <td>21-08-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11982</td>
+                          <td>25-09-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11983</td>
+                          <td>30-09-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11983</td>
+                          <td>30-09-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11983</td>
+                          <td>30-09-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11979</td>
+                          <td>22-04-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11980</td>
+                          <td>21-02-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11979</td>
+                          <td>22-04-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>11990</td>
+                          <td>10-04-2015</td>
+                          <td>Njanesh</td>
+                          <td>Shenoy</td>
+                          <td>9000000000</td>
+                          <td>Subscription Created</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- /.box-body -->
+                </div>
               </div>
 
-           
-              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </section>
+</section>
 </div>
 <footer class="main-footer">
   <div class="pull-right hidden-xs">
@@ -347,7 +346,7 @@
     });
     var dataTable = $('#table_sortable').dataTable();
     $("#searchbox").keyup(function() {
-        dataTable.fnFilter(this.value);
+      dataTable.fnFilter(this.value);
     }); 
   });
 </script>

@@ -48,3 +48,12 @@ div.dataTables_filter {
 		margin: 0 5px;
 	}
 }
+
+.application-status {
+	.dataTables_filter {
+	     display: none;
+	}
+	.pad-tp-6 {
+		    padding-top: 6px;
+	}
+}
