@@ -138,3 +138,12 @@ div.dataTables_filter {
 		transition: all 0.3s ease-in-out;
 	}
 }
+
+.user-list {
+	table.dataTable thead > tr > th {
+		&:first-of-type {
+			width: 1%;
+			padding-right: 0;
+		}
+	}
+}

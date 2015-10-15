@@ -6,10 +6,11 @@
 	<link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
 	<link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
 	<link rel="stylesheet" href="../../static/css/library/ionicons.css">
+  <link rel="stylesheet" href="../../static/css/library/select2.min.css">
 	<link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
 	<link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
-  <!-- <link rel="stylesheet" href="../../static/css/library/daterangepicker-bs3.css">
-  <link rel="stylesheet" href="../../static/css/library/iCheck-minimal-blue.css"> -->
+  <link rel="stylesheet" href="../../static/css/library/daterangepicker-bs3.css">
+  <link rel="stylesheet" href="../../static/css/library/iCheck-minimal-blue.css">
   <link rel="stylesheet" href="../../static/css/library/dataTables.bootstrap.css">
   <link rel="stylesheet" href="../../static/css/custom/style.css">
 	<!--[if lt IE 9]>
@@ -165,27 +166,79 @@
 
 
             <section class="content">
-
             
              <div class="row">
               <div class="col-xs-12">
 
                <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">Categorize by Filter</h3>
+                  <h3 class="box-title">Apply Filter</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
+                <div class="row">
+                <div class="col-xs-3">
+                <div class="form-group">
+                    <label>Expiry Date</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control pull-right" id="expiry-date-cal">
+                    </div>
+                  </div>
+                </div>
+               
+                 <div class="col-xs-4">
+                  <div class="form-group">
+                    <label>Plan</label>
+                    <select class="form-control filter-plan" multiple="multiple" data-placeholder="" style="width: 100%;">
+                        <option value="001">512KBBHULweb</option>
+                        <option value="002">1024KBBHULweb</option>
+                        <option value="003">2048KBBHULweb</option>
+                        <option value="004">4096KBBHULweb</option>
+                        <option value="005">FUP1MBPS_20GB</option>
+                        <option value="006">FUP2MBPS_20GB</option>
+                        <option value="007">FUP1MBPS_10GB</option>
+                        <option value="008">FUP4MBPS_40GB</option>
+                        <option value="009">FUP4MBPS_30GB</option>
+                        <option value="010">FUP10MBPS_40GB</option>
+                        <option value="011">FUP10MBPS_60GB</option>
+                        <option value="012">FUP10MBPS_100GB</option>
+                    </select>
+                  </div>
+                </div>
+                 <div class="col-xs-3">
+                    <div class="form-group">
+                    <label>Status</label>
+                    <select class="form-control filter-plan" multiple="multiple" data-placeholder="" style="width: 100%;">
+                      <option>Active</option>
+                      <option>Suspended</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-2">
+                  <label>&nbsp;</label>
+                  <button type="button" class="btn bg-maroon btn-block btn-flat" id="chng-pkg-btn">
+                  <i class="fa fa-search"></i> Find</button>
+                </div>
+                </div>
                 </div>
               </div>
+              </div>
+               </div>
 
-                <div class="box box-danger">
+                <div class="box box-primary">
                   <div class="box-header">
                     <h3 class="box-title">List View</h3>
+                    <div class="pull-right">
+                    <a href="#" class="btn bg-maroon btn-flat pull-right"><i class="fa fa-cloud-download fa-lg"></i> Export </a>
+                  </div>
                   </div><!-- /.box-header -->
                   <div class="box-body">
                     <table id="table_sortable2" class="table table-bordered table-striped">
                       <thead>
                         <tr>
+                          <th class="no-sort"><input type="checkbox" class="minimal" id="checkAll"></th>
                           <th>#</th>
                           <th>Subscriber Name</th>
                           <th>Subscriber Id</th>
@@ -196,7 +249,9 @@
                         </tr>
                       </thead>
                       <tbody>
+
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>1</td>
                           <td>Rahul George</td>
                           <td>132245</td>
@@ -207,6 +262,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>2</td>
                           <td>Rahul George</td>
                           <td>132265</td>
@@ -217,6 +273,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>3</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -227,6 +284,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>4</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -237,6 +295,7 @@
                           </td>
                         </tr>
                           <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>5</td>
                           <td>Rahul George</td>
                           <td>132265</td>
@@ -247,6 +306,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>6</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -257,6 +317,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>7</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -267,6 +328,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>8</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -277,6 +339,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>9</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -287,6 +350,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>10</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -297,6 +361,7 @@
                           </td>
                         </tr>
                         <tr>
+                          <td><input type="checkbox" class="minimal"></td>
                           <td>11</td>
                           <td>Rithwik S Balaram</td>
                           <td>132251</td>
@@ -335,26 +400,56 @@
 
 <script src="../../static/js/library/moment.min.js"></script>
 <script src="../../static/js/library/daterangepicker.js"></script>
-<!-- <script src="../../static/js/library/icheck.min.js"></script> -->
+<script src="../../static/js/library/icheck.min.js"></script>
 <script src="../../static/js/library/jquery.dataTables.min.js"></script>
 
 <script src="../../static/js/library/dataTables.bootstrap.min.js"></script>
+
+ <script src="../../static/js/library/select2.full.min.js"></script>
 
 <script src="../../static/js/library/jquery.slimscroll.min.js"></script>
 <script src="../../static/js/library/app.min.js"></script>
 
 <script>
+  $(function () {  
 
-$(function () {  
-    $("#table_sortable2").DataTable({  
-      "order": [[6, 'desc']],
-      aoColumnDefs: [{  
-        bSortable: false,  
-        aTargets: [-1], // Removes sorting option for last column. 
-        
-      }]  
-    });  
-});  
+   //iCheck for checkbox and radio inputs
+   $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue'
+  });
+
+   $('#checkAll').on('ifChecked ifUnchecked', function(event) {
+    if (event.type == 'ifChecked') {
+      $('input:checkbox').iCheck('check');
+    } else {
+      $('input:checkbox').iCheck('uncheck');
+    }
+  });
+   $('input.check').on('ifUnchecked', function(event) {
+    $('input.all').iCheck('uncheck');
+  });
+
+
+   $('#expiry-date-cal').daterangepicker({
+    autoApply: true,
+    locale: {
+      format: "DD/MM/YYYY"
+    }
+  });
+
+   $(".filter-plan").select2();
+
+   $("#table_sortable2").DataTable({ 
+    "order": [],
+    "columnDefs": [ {
+     "targets"  :[0,-1],
+     "orderable": false,
+   }]
+
+ });  
+
+ });  
 </script>
 </body>
 </html>
