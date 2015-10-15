@@ -173,17 +173,11 @@
             <div class="form-group">
                       <label for="inputEmail3" class="col-sm-2 control-label">Form Number Search</label>
                       <div class="col-sm-10">
-                       <div class="input-group input-group-sm">
-                    <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                      <button class="btn btn-info btn-flat" type="button">Search</button>
-                    </span>
-                  </div>
+                       <input class="form-control" id="searchbox">
                       </div>
                     </div>
                     </div>
                     </div>
-
 
               <div class="row">
                 <div class="col-xs-12">
@@ -192,7 +186,7 @@
                   <h3 class="box-title">Online Forms</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
-                  <table id="table_sortable" class="table table-bordered table-hover">
+                  <table id="table_sortable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
                         <th>Form No.</th>
@@ -250,7 +244,60 @@
                         <td>Subscription Created</td>
                         <td>&nbsp;</td>
                       </tr>
-                      
+                      <tr>
+                        <td>11983</td>
+                        <td>30-09-2015</td>
+                        <td>Njanesh</td>
+                        <td>Shenoy</td>
+                        <td>9000000000</td>
+                        <td>Subscription Created</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                       <tr>
+                        <td>11983</td>
+                        <td>30-09-2015</td>
+                        <td>Njanesh</td>
+                        <td>Shenoy</td>
+                        <td>9000000000</td>
+                        <td>Subscription Created</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>11979</td>
+                        <td>22-04-2015</td>
+                        <td>Njanesh</td>
+                        <td>Shenoy</td>
+                        <td>9000000000</td>
+                        <td>Subscription Created</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>11980</td>
+                        <td>21-02-2015</td>
+                        <td>Njanesh</td>
+                        <td>Shenoy</td>
+                        <td>9000000000</td>
+                        <td>Subscription Created</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>11979</td>
+                        <td>22-04-2015</td>
+                        <td>Njanesh</td>
+                        <td>Shenoy</td>
+                        <td>9000000000</td>
+                        <td>Subscription Created</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>11990</td>
+                        <td>10-04-2015</td>
+                        <td>Njanesh</td>
+                        <td>Shenoy</td>
+                        <td>9000000000</td>
+                        <td>Subscription Created</td>
+                        <td>&nbsp;</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div><!-- /.box-body -->
@@ -292,14 +339,17 @@
   $(function () {
     $('#table_sortable').DataTable({
       "paging": true,
-      "lengthChange": false,
-      "searching": false,
+      "lengthChange": true,
+      "searching": true,
       "ordering": true,
       "info": true,
-      "autoWidth": false
+      "autoWidth": true
     });
-  })
-  
+    var dataTable = $('#table_sortable').dataTable();
+    $("#searchbox").keyup(function() {
+        dataTable.fnFilter(this.value);
+    }); 
+  });
 </script>
 </body>
 </html>
