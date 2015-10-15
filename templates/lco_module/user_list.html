@@ -133,7 +133,7 @@
                 <li><a href="#">AGP Revenue-Govt Subs</a></li>
               </ul>
             </li>
-            <li>
+            <li class="active">
               <a href="#">
                 <i class="fa fa-globe"></i>
                 <span>Users</span>
@@ -147,154 +147,164 @@
             </li>
             <li class="header">IMPORTANT LINKS</li>
             <li><a href="#"><i class="fa fa-chevron-circle-right text-yellow"></i><span>Submit Application</span></a></li>
-            <li class="active"><a href="#"><i class="fa fa-chevron-circle-right text-aqua"></i><span>Application Status</span></a></li>
+            <li><a href="#"><i class="fa fa-chevron-circle-right text-aqua"></i><span>Application Status</span></a></li>
           </ul>
         </section>
       </aside>
 
-          <div class="content-wrapper application-status">
+          <div class="content-wrapper user-list">
             <section class="content-header">
               <h1>
-                Application Status
+                User List
               </h1>
               <ol class="breadcrumb">
                 <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                <li class="active">Application Status</li>
+                <li class="active">User List</li>
               </ol>
             </section>
 
 
             <section class="content">
 
-              <div class="box box-primary">
-                <div class="box-header with-border">
-                <div class="form-group">
-                    <label class="col-sm-1 control-label pad-tp-6">Search</label>
-                    <div class="col-sm-11">
-                     <input class="form-control" id="searchbox">
-                   </div>
-                 </div>
-               </div>
-             </div>
-
+            
              <div class="row">
               <div class="col-xs-12">
-                <div class="box">
+
+               <div class="box box-primary">
+                <div class="box-header">
+                  <h3 class="box-title">Categorize by Filter</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                </div>
+              </div>
+
+                <div class="box box-danger">
                   <div class="box-header">
-                    <h3 class="box-title">Online Forms</h3>
+                    <h3 class="box-title">List View</h3>
                   </div><!-- /.box-header -->
                   <div class="box-body">
-                    <table id="table_sortable" class="table table-bordered table-striped">
+                    <table id="table_sortable2" class="table table-bordered table-striped">
                       <thead>
                         <tr>
-                          <th>Form No.</th>
-                          <th>Applied Date</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Mobile</th>
+                          <th>#</th>
+                          <th>Subscriber Name</th>
+                          <th>Subscriber Id</th>
                           <th>Status</th>
-                          <th>Remarks</th>
+                          <th>Plan</th>
+                          <th>Expiry Date</th>
+                          <th class="no-sort">&nbsp;</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>11979</td>
-                          <td>22-04-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>1</td>
+                          <td>Rahul George</td>
+                          <td>132245</td>
+                          <td>Active</td>
+                          <td>RES</td>
+                          <td>12-10-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11980</td>
-                          <td>21-02-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>2</td>
+                          <td>Rahul George</td>
+                          <td>132265</td>
+                          <td>Suspended</td>
+                          <td>RES</td>
+                          <td>11-7-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11981</td>
-                          <td>21-08-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>3</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11982</td>
-                          <td>25-09-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>4</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
+                        </tr>
+                          <tr>
+                          <td>5</td>
+                          <td>Rahul George</td>
+                          <td>132265</td>
+                          <td>Suspended</td>
+                          <td>RES</td>
+                          <td>11-7-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11983</td>
-                          <td>30-09-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>6</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11983</td>
-                          <td>30-09-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>7</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11983</td>
-                          <td>30-09-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>8</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11979</td>
-                          <td>22-04-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>9</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11980</td>
-                          <td>21-02-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>10</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                         <tr>
-                          <td>11979</td>
-                          <td>22-04-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td>11990</td>
-                          <td>10-04-2015</td>
-                          <td>Njanesh</td>
-                          <td>Shenoy</td>
-                          <td>9000000000</td>
-                          <td>Subscription Created</td>
-                          <td>&nbsp;</td>
+                          <td>11</td>
+                          <td>Rithwik S Balaram</td>
+                          <td>132251</td>
+                          <td>Suspended</td>
+                          <td>SME</td>
+                          <td>17-8-2015</td>
+                          <td><button class="btn btn-block btn-ziggy btn-primary btn-sm btn-flat">View</button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -334,20 +344,17 @@
 <script src="../../static/js/library/app.min.js"></script>
 
 <script>
-  $(function () {
-    $('#table_sortable').DataTable({
-      "paging": true,
-      "lengthChange": true,
-      "searching": true,
-      "ordering": true,
-      "info": true,
-      "autoWidth": true
-    });
-    var dataTable = $('#table_sortable').dataTable();
-    $("#searchbox").keyup(function() {
-      dataTable.fnFilter(this.value);
-    }); 
-  });
+
+$(function () {  
+    $("#table_sortable2").DataTable({  
+      "order": [[6, 'desc']],
+      aoColumnDefs: [{  
+        bSortable: false,  
+        aTargets: [-1], // Removes sorting option for last column. 
+        
+      }]  
+    });  
+});  
 </script>
 </body>
 </html>
