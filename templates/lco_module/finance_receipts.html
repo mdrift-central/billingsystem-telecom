@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/css/library/ionicons.css">
 
+  <link rel="stylesheet" href="../../static/css/library/daterangepicker-bs3.css">
+
   <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
   <link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
 
@@ -153,7 +155,83 @@
         </section>
       </aside>
 
-      <div class="content-wrapper finance-receipts">
+      <div class="content-wrapper finance receipts">
+        <section class="content-header">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Disbursement Report</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <div class="form-group">
+                    <label>Date Range</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control pull-right" id="disb-rpt-range" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <button type="button" class="btn bg-maroon btn-flat"><i class="fa fa-upload"></i> Export</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Finance Status Report</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <div class="form-group">
+                    <label>Date Range</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control pull-right" id="fin-sts-rpt-range">
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <button type="button" class="btn bg-maroon btn-flat"><i class="fa fa-upload"></i> Export</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Finance Status Report (Govt Subs Only)</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <div class="form-group">
+                    <label>Date Range</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control pull-right" id="fin-sts-rpt-govt-subs-range">
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <button type="button" class="btn bg-maroon btn-flat"><i class="fa fa-upload"></i> Export</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="content-header">
           <h1>
             Receipts
@@ -221,7 +299,14 @@
                         <td>25000</td>
                         <td>Online Transfer</td>
                         <td>Cleared</td>
-                        <td>VG4E37QW912NMH</td>
+                        <td>VG4E37QW912N</td>
+                      </tr>
+                      <tr>
+                        <td>01/08/2015</td>
+                        <td>1000</td>
+                        <td>Online Transfer</td>
+                        <td>Cleared</td>
+                        <td>KJ78UI89HJ76</td>
                       </tr>
                     </tbody>
                   </table>
@@ -245,18 +330,40 @@
   <script src="../../static/js/library/jquery.dataTables.min.js"></script>
   <script src="../../static/js/library/dataTables.bootstrap.min.js"></script>
 
+  <script src="../../static/js/library/moment.min.js"></script>
+  <script src="../../static/js/library/daterangepicker.js"></script>
+
   <script src="../../static/js/library/jquery.slimscroll.min.js"></script>
 
   <script src="../../static/js/library/app.min.js"></script>
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
+      $('#disb-rpt-range').daterangepicker({
+        autoApply: true,
+        locale: {
+          format: "DD/MM/YYYY"
+        }
+      });
+      $('#fin-sts-rpt-range').daterangepicker({
+        autoApply: true,
+        locale: {
+          format: "DD/MM/YYYY"
+        }
+      });
+      $('#fin-sts-rpt-govt-subs-range').daterangepicker({
+        autoApply: true,
+        locale: {
+          format: "DD/MM/YYYY"
+        }
+      });
       $('#table_sortable').DataTable({
         "paging": true,
         "lengthChange": true,
         "searching": true,
         "ordering": true,
         "info": true,
+        "order": [[0, 'desc']],
         "autoWidth": false
       });
     });
