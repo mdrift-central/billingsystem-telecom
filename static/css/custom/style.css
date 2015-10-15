@@ -93,6 +93,13 @@ div.dataTables_filter {
     background-image: -webkit-linear-gradient(180deg, #f39c12, #f39c12 50%, transparent 50%, transparent);
     background-image: -moz-linear-gradient(180deg, #f39c12, #f39c12 50%, transparent 50%, transparent);
     background-image: linear-gradient(180deg, #f39c12, #f39c12 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)); }
+  .btn-ziggy.btn-maroon {
+    background-color: transparent;
+    border: solid 1px #d81b60;
+    color: #d81b60;
+    background-image: -webkit-linear-gradient(180deg, #d81b60, #d81b60 50%, transparent 50%, transparent);
+    background-image: -moz-linear-gradient(180deg, #d81b60, #d81b60 50%, transparent 50%, transparent);
+    background-image: linear-gradient(180deg, #d81b60, #d81b60 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)); }
   .btn-ziggy:hover {
     color: white;
     background-position: 0 0;
