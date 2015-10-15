@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kerala Vision LCO Change Package</title>
+  <title>Kerala Vision LCO Receipts</title>
   <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
   <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/css/library/ionicons.css">
 
-  <link rel="stylesheet" href="../../static/css/library/dataTables.bootstrap.css">
-
   <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
   <link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
+
+  <link rel="stylesheet" href="../../static/css/library/dataTables.bootstrap.css">
 
   <link rel="stylesheet" href="../../static/css/custom/style.css">
   <!--[if lt IE 9]>
@@ -169,68 +169,55 @@
             <div class="col-md-12">
               <div class="box box-primary" id="addl-data-subscbr-dtls">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Adithya Cable Vision</h3>
+                  <h3 class="box-title">Receipt Details</h3>
                 </div>
                 <div class="box-body">
                   <table id="table_sortable" class="table table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th>Form No.</th>
-                        <th>Applied Date</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Mobile</th>
+                        <th>Receipt Date</th>
+                        <th>Amount</th>
+                        <th>Type</th>
                         <th>Status</th>
-                        <th>Remarks</th>
+                        <th>Reference</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>11979</td>
-                        <td>22-04-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
+                        <td>10/10/2015</td>
+                        <td>7500</td>
+                        <td>Online Transfer</td>
+                        <td>Cleared</td>
+                        <td>BG67YU8IO90PQ</td>
                       </tr>
                       <tr>
-                        <td>11980</td>
-                        <td>21-02-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
+                        <td>01/10/2015</td>
+                        <td>5000</td>
+                        <td>Online Transfer</td>
+                        <td>Cleared</td>
+                        <td>JUI89T6R0H67V</td>
                       </tr>
                       <tr>
-                        <td>11981</td>
-                        <td>21-08-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
+                        <td>20/09/2015</td>
+                        <td>12500</td>
+                        <td>Online Transfer</td>
+                        <td>Cleared</td>
+                        <td>M8NJI943RTGF3</td>
                       </tr>
                       <tr>
-                        <td>11982</td>
-                        <td>25-09-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
+                        <td>10/09/2015</td>
+                        <td>5000</td>
+                        <td>Online Transfer</td>
+                        <td>Cleared</td>
+                        <td>LK8765TY8UIOKI</td>
                       </tr>
                       <tr>
-                        <td>11983</td>
-                        <td>30-09-2015</td>
-                        <td>Njanesh</td>
-                        <td>Shenoy</td>
-                        <td>9000000000</td>
-                        <td>Subscription Created</td>
-                        <td>&nbsp;</td>
+                        <td>15/08/2015</td>
+                        <td>25000</td>
+                        <td>Online Transfer</td>
+                        <td>Cleared</td>
+                        <td>VG4E37QW912NMH</td>
                       </tr>
-                      
                     </tbody>
                   </table>
                 </div>
@@ -261,8 +248,8 @@
     $(function() {
       $('#table_sortable').DataTable({
         "paging": true,
-        "lengthChange": false,
-        "searching": false,
+        "lengthChange": true,
+        "searching": true,
         "ordering": true,
         "info": true,
         "autoWidth": false

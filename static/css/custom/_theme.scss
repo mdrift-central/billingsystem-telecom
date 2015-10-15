@@ -33,3 +33,18 @@
 		margin-right: 5px;
 	}
 }
+
+// Datatable Override
+div.dataTables_filter {
+	text-align: left;
+	.input-sm {
+		width: 100%;
+	}
+}
+
+.dataTables_length {
+	text-align: right;
+	select {
+		margin: 0 5px;
+	}
+}
