@@ -24,6 +24,16 @@
   margin-top: -3px;
   margin-right: 5px; }
 
+div.dataTables_filter {
+  text-align: left; }
+  div.dataTables_filter .input-sm {
+    width: 100%; }
+
+.dataTables_length {
+  text-align: right; }
+  .dataTables_length select {
+    margin: 0 5px; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {

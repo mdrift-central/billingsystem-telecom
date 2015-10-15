@@ -309,6 +309,7 @@
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
+      $(".select").select2();
       $('#pkg-chng-subscbr-dtls, #pkg-chng-rqst-dtls').hide();
       $('#pkg-chng-slt-subscbr').change(function(event) {
         var getSelectedVal = $(this).find('option:selected').val();

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kerala Vision LCO Change Package</title>
+  <title>Kerala Vision LCO Additional Data Plan for FUP</title>
   <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
   <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/css/library/ionicons.css">
@@ -293,6 +293,7 @@
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
+      $(".select").select2();
       $('#addl-data-subscbr-dtls, #addl-data-pkg-dtls').hide();
       $('#addl-data-slt-subscbr').change(function(event) {
         var getSelectedVal = $(this).find('option:selected').val();
