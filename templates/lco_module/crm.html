@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/css/library/ionicons.css">
 
-  <link rel="stylesheet" href="../../static/css/library/daterangepicker-bs3.css">
+  <link rel="stylesheet" href="../../static/css/library/select2.min.css">
 
   <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
   <link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
@@ -168,9 +168,61 @@
         <section class="content">
           <div class="row">
             <div class="col-md-12">
+              <div class="alert alert-success alert-dismissable">
+                Issue created successfully. Support ticked no is 5048KL7896
+              </div>
+              <div class="box box-warning" id="crm-new-issue">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Create a new issue</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                      <div class="form-group">
+                        <label>User Name</label>
+                        <select class="form-control select" style="width: 100%;">
+                          <option selected="selected" value="">Select User</option>
+                          <option value="001">ritwik.s.balram, #589652</option>
+                          <option value="002">rahul.george, #1589632</option>
+                          <option value="003">abdul.samad, #7689098</option>
+                          <option value="004">sachin.sharma, #326589</option>
+                          <option value="005">varun.rajeevan, #437612</option>
+                          <option value="006">nithin.krishnan, #4478568</option>
+                          <option value="007">sooraj.kv, #986421</option>
+                          <option value="008">sijil.pv, #342879</option>
+                          <option value="009">vivek.elayidom, #0674327</option>
+                          <option value="010">manoj.kallil, #7896573</option>
+                          <option value="011">salil.varma, #8923451</option>
+                          <option value="012">vivek.raj, #612908</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <label>Issue</label>
+                        <textarea class="form-control" rows="1"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                      <label>&nbsp;</label>
+                      <div class="clearfix"></div>
+                      <button type="button" class="btn btn-maroon btn-ziggy btn-flat btn-block">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Issues Assigned to Adithya Cable Vision - Cherthala</h3>
+                  <div class="pull-left">
+                    <h3 class="box-title">Issues Assigned to Adithya Cable Vision - Cherthala</h3>
+                  </div>
+                  <div class="pull-right">
+                    <button type="button" class="btn bg-maroon btn-flat" id="new-issue-btn"><i class="fa fa-plus-square"></i> New Issue</button>
+                  </div>
                 </div>
                 <div class="box-body">
                   <table id="crm-list" class="table table-bordered table-striped table-hover">
@@ -193,9 +245,9 @@
                         <td>No signal - modem indicates red</td>
                         <td>sooraj.kv</td>
                         <td>LCO</td>
-                        <td>Closed</td>
-                        <td>08 Sept 2015 12:32:21</td>
-                        <td><a href="#">New</a></td>
+                        <td><span class="text-red">Open</span></td>
+                        <td></td>
+                        <td><a href="#">Click to Upload</a></td>
                       </tr>
                       <tr>
                         <td>3256KL1032</td>
@@ -203,9 +255,9 @@
                         <td>Cannot login - error displaying</td>
                         <td>nithin.krishnan</td>
                         <td>LCO</td>
-                        <td>Closed</td>
+                        <td><span class="text-green">Closed</span></td>
                         <td>02 Sept 2015 19:42:08</td>
-                        <td><a href="#">New</a></td>
+                        <td><a href="#">Click to Upload</a></td>
                       </tr>
                       <tr>
                         <td>4643KL8790</td>
@@ -213,9 +265,9 @@
                         <td>Connection breaks frequently</td>
                         <td>rahul.george</td>
                         <td>LCO</td>
-                        <td>Closed</td>
+                        <td><span class="text-green">Closed</span></td>
                         <td>22 Aug 2015 09:25:55</td>
-                        <td><a href="#">New</a></td>
+                        <td><a href="#">Click to Upload</a></td>
                       </tr>
                       <tr>
                         <td>4209KL5432</td>
@@ -223,9 +275,9 @@
                         <td>Login error</td>
                         <td>vivek.elayidom</td>
                         <td>LCO</td>
-                        <td>Closed</td>
+                        <td><span class="text-green">Closed</span></td>
                         <td>17 Aug 2015 10:06:19</td>
-                        <td><a href="#">New</a></td>
+                        <td><a href="#">Click to Upload</a></td>
                       </tr>
                       <tr>
                         <td>4956KL0976</td>
@@ -233,9 +285,9 @@
                         <td>Signal breaking</td>
                         <td>sijil.pv</td>
                         <td>LCO</td>
-                        <td>Closed</td>
+                        <td><span class="text-green">Closed</span></td>
                         <td>12 Aug 2015 20:10:12</td>
-                        <td><a href="#">New</a></td>
+                        <td><a href="#">Click to Upload</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -260,16 +312,26 @@
   <script src="../../static/js/library/dataTables.bootstrap.min.js"></script>
 
   <script src="../../static/js/library/moment.min.js"></script>
-  <script src="../../static/js/library/daterangepicker.js"></script>
 
   <script src="../../static/js/library/jquery.slimscroll.min.js"></script>
 
   <script src="../../static/js/library/datetime-moment.js"></script>
 
+  <script src="../../static/js/library/select2.full.min.js"></script>
+
   <script src="../../static/js/library/app.min.js"></script>
   <script src="../../static/js/custom/custom.js"></script>
   <script>
     $(function() {
+      $(".select").select2();
+      $('#crm-new-issue, .crm .alert-success').hide();
+      $('#new-issue-btn').bind('click', function () {
+        $('#crm-new-issue').toggle();
+      });
+      $('#crm-new-issue .btn').bind('click', function () {
+        // $('#crm-new-issue').hide();
+        $('.crm .alert-success').show();
+      });
       $.fn.dataTable.moment( 'DD MMM YYYY HH:mm:ss' );
       $('#crm-list').DataTable({
         "paging": true,
