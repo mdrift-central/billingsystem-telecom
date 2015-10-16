@@ -175,12 +175,20 @@ div.dataTables_filter {
     margin: -2px 3px 0 0;
 }
 .login-logo a {
-	img {
-		margin-top: 0;
+		img {
+			margin-top: 0;
+		}
+		b {
+		color: white;
+    	font-size: 24px;
+    	margin-left: 10px;
 	}
-	b {
-	color: white;
-    font-size: 24px;
-    margin-left: 10px;
 }
+
+.copyr {
+	text-align: center;
+    color: rgba(255, 255, 255, 0.67);
+    display: block;
+    font-size: 13px;
+    margin-top: 6px;
 }

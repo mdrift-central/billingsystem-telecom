@@ -134,6 +134,13 @@ div.dataTables_filter {
   font-size: 24px;
   margin-left: 10px; }
 
+.copyr {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.67);
+  display: block;
+  font-size: 13px;
+  margin-top: 6px; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {
