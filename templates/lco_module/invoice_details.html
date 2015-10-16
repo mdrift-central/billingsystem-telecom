@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kerala Vision LCO Receipts</title>
+  <title>Kerala Vision LCO Invoice Details</title>
   <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
   <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/css/library/ionicons.css">
@@ -155,7 +155,7 @@
         </section>
       </aside>
 
-      <div class="content-wrapper finance receipts">
+      <div class="content-wrapper finance invoice-details">
         <section class="content-header">
           <div class="row">
             <div class="col-md-4">
@@ -238,7 +238,8 @@
           </h1>
           <ol class="breadcrumb">
             <li class="active"><a href="#"><i class="fa fa-credit-card"></i>Finance</a></li>
-            <li>ANP Revenue</li>
+            <li><a href="#">ANP Revenue</a></li>
+            <li>Invoice Details</li>
           </ol>
         </section>
 
@@ -249,8 +250,8 @@
                 <div class="box-header with-border">
                   <h3 class="box-title">Invoice Details of Sep 2015</h3>
                 </div>
-                <div class="box-body">
-                  <table id="anp_revenue" class="table table-bordered table-hover">
+                <div class="box-body no-padding">
+                  <table id="anp_revenue" class="table table-hover">
                     <tbody>
                       <tr>
                         <td>Total from all subscribers</td>
@@ -297,6 +298,7 @@
                         <td>2114.04</td>
                         <td></td>
                       </tr>
+                      <tr>
                         <td>Gross Revenue Sharing Including ST</td>
                         <td>2114.00</td>
                         <td></td>
@@ -315,6 +317,21 @@
                         <td>Net Revenue share received</td>
                         <td>1900</td>
                         <td><a href="#">View Details</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          We have verified the above values pertaining to Kerala Vision business. We certify that the income and expenditure mentioned above are correct. We acknowledge that we have received the above arrived revenue share.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Service Tax No.</td>
+                        <td>PAN No: KVCHJ4789B</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Approved by:</td>
+                        <td>Designation:</td>
+                        <td>Approved on: 16-10-2015 10:27:48</td>
                       </tr>
                     </tbody>
                   </table>
@@ -364,16 +381,6 @@
         locale: {
           format: "DD/MM/YYYY"
         }
-      });
-      $.fn.dataTable.moment( 'MMM YYYY' );
-      $('#anp_revenue').DataTable({
-        "paging": true,
-        "lengthChange": true,
-        "searching": true,
-        "ordering": true,
-        "info": true,
-        "order": [[1, 'desc']],
-        "autoWidth": false
       });
     });
   </script>

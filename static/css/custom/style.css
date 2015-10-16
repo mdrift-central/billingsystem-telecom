@@ -113,6 +113,10 @@ div.dataTables_filter {
   width: 1%;
   padding-right: 0; }
 
+.finance.invoice-details .table tr:first-of-type td:first-of-type {
+  width: 30%;
+  white-space: nowrap; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {
