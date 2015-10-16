@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kerala Vision Subscriber Account Dashboard</title>
+  <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
+  <link rel="stylesheet" href="../../static/css/library/ionicons.css">
+
+  <link rel="stylesheet" href="../../static/css/library/daterangepicker-bs3.css">
+
+  <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
+  <link rel="stylesheet" href="../../static/css/library/skins/skin-blue.css">
+  
+  <link rel="stylesheet" href="../../static/css/custom/style.css">
+<link rel="stylesheet" href="../../static/css/library/jasny-bootstrap.min.css">
+  <!--[if lt IE 9]>
+        <script src="../../static/js/library/html5shiv.js"></script>
+        <script src="../../static/js/library/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition fixed skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <a href="#" class="logo">
+          <span class="logo-mini"><img src="../../static/images/kerala-vision-logo.png" alt=""></span>
+          <span class="logo-lg"><img src="../../static/images/kerala-vision-logo.png" alt="">
+            KERALA VISION
+          </span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-danger">3</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 3 notifications</li>
+                  <li>
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <div class="media">
+                            <div class="media-left">
+                              <i class="fa fa-comments text-yellow"></i>
+                            </div>
+                            <div class="media-body">
+                              Very long description here that may not fit into the page and may cause design problems
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-yellow"></i> Request for plan change
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="hidden-xs">Rahul George</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="user-header">
+                    <img src="../../static/images/dummyPlaceholder.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      Rahul George
+                      <small>FUP_20MBPS_100GB</small>
+                    </p>
+                  </li>
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="profile.html" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-power-off"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <aside class="main-sidebar">
+        <section class="sidebar">
+          <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li>
+              <a href="dashboard.html">
+                <i class="fa fa-dashboard"></i><span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="account.html">
+                <i class="fa fa-cogs"></i>
+                <span>Account</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-credit-card"></i>
+                <span>Billing</span>
+                <i class="fa fa-angle-right pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="payment_history.html">Payment History</a></li>
+                <li><a href="data_usage.html">Data Usage</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="profile.html">
+                <i class="fa fa-user"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="support.html">
+                <i class="fa fa-comments"></i>
+                <span>Support</span>
+              </a>
+            </li>
+            <li class="header">QUICK LINKS</li>
+            <li><a href="data_usage.html"><i class="fa fa-chevron-circle-right text-yellow"></i><span>Data Usage</span></a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <div class="content-wrapper finance accnt-balance">
+        <section class="content-header">
+          <h1>
+            Profile
+          </h1>
+          <ol class="breadcrumb">
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                <li class="active"><i class="fa fa-user"></i> Profile</li>
+              </ol>
+        </section>
+
+        <section class="content">
+          <div class="row">
+          <div class="col-md-3">
+              <div class="box box-success">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Profile Picture</h3>
+                  <div class="clear-fix"></div>
+
+                  <div class="fileinput fileinput-exists profile-pic" data-provides="fileinput">
+                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"><img src="../../static/images/dummyPlaceholder.jpg" alt=""></div>
+                    <div class="text-center">
+                      <span class="btn bg-maroon btn-flat btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                      <a href="#" class="btn btn-ziggy btn-default btn-flat fileinput-exists" data-dismiss="fileinput">Remove</a>
+                    </div>
+                  </div>
+
+                </div>
+                </div>
+                </div>
+            <div class="col-md-9">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Registration Info</h3>
+                </div>
+                <div class="box-body no-padding">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td><strong>User Name</strong></td>
+                        <td>Rahul George</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Registration Date</strong></td>
+                        <td>10 July 2015</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Name</strong></td>
+                        <td>Rahul George G</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Address</strong></td>
+                        <td>Edamana House, Kunnathery, Thaikkattukara P.O, Aluva</td>
+                     
+                      <tr>
+                        <td><strong>Mobile No.</strong></td>
+                        <td>9000000000</td>
+                        </tr>
+                        <td><strong>Email Address</strong></td>
+                        <td><a href="mailto:rahul.george@gmail.com">rahul.george@gmail.com</a></td>
+                        
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          All rights reserved
+        </div>
+        Copyright &copy; 2014-2015
+      </footer>
+    </div>
+  
+  <script src="../../static/js/library/jquery-2.1.4.min.js"></script>
+  <script src="../../static/js/library/bootstrap.js"></script>
+
+  <script src="../../static/js/library/moment.min.js"></script>
+  <script src="../../static/js/library/daterangepicker.js"></script>
+
+  <script src="../../static/js/library/jquery.slimscroll.min.js"></script>
+  <script src="../../static/js/library/app.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+  
+</body>
+</html>

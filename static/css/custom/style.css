@@ -141,6 +141,15 @@ div.dataTables_filter {
   font-size: 13px;
   margin-top: 6px; }
 
+/* -------------- */
+.profile-pic {
+  width: 100% !important; }
+  .profile-pic .thumbnail {
+    margin: 14px auto !important;
+    border-radius: 0 !important;
+    border: none !important;
+    width: 100% !important; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {
