@@ -117,6 +117,10 @@ div.dataTables_filter {
   width: 30%;
   white-space: nowrap; }
 
+.main-header .logo {
+  font-size: 15px !important;
+  font-weight: bold !important; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {
