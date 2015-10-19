@@ -18,6 +18,7 @@
         <script src="../../static/js/library/html5shiv.js"></script>
         <script src="../../static/js/library/respond.js"></script>
     <![endif]-->
+
 </head>
 <body class="hold-transition fixed skin-blue sidebar-mini">
     <div class="wrapper">
@@ -168,7 +169,7 @@
                     <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"><img src="../../static/images/dummyPlaceholder.jpg" alt=""></div>
                     <div class="text-center">
                       <span class="btn bg-maroon btn-flat btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
-                      <a href="#" class="btn btn-ziggy btn-default btn-flat fileinput-exists" data-dismiss="fileinput">Remove</a>
+                      <a href="#" class="btn btn-ziggy btn-default btn-flat fileinput-exists profile-pic-remove" data-dismiss="fileinput">Remove</a>
                     </div>
                   </div>
 
@@ -198,14 +199,21 @@
                       <tr>
                         <td><strong>Address</strong></td>
                         <td>Edamana House, Kunnathery, Thaikkattukara P.O, Aluva</td>
-                     
+                     </tr>
                       <tr>
                         <td><strong>Mobile No.</strong></td>
                         <td>9000000000</td>
                         </tr>
+                        <tr>
                         <td><strong>Email Address</strong></td>
                         <td><a href="mailto:rahul.george@gmail.com">rahul.george@gmail.com</a></td>
-                        
+                        </tr>
+
+                        <tr>
+                        <td>&nbsp;</td>
+                        <td><a href="#" class="btn bg-maroon btn-flat">Change Email Alert</a>
+                        <a href="#" class="btn btn-default btn-flat">Change Password</a></td>
+                        </tr>
                       
                     </tbody>
                   </table>
@@ -232,6 +240,24 @@
   <script src="../../static/js/library/jquery.slimscroll.min.js"></script>
   <script src="../../static/js/library/app.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+ <!-- <script>
+  $('.fileinput .profile-pic-remove').on('click', function(event) {
+   
+      var strconfirm = confirm("Are you sure you want to delete?");
+      if (strconfirm == true)
+      {
+        return true;
+      }
+      else {
+        event.stopPropagation();
+        return false;
+      }
+
+  });
+    </script>-->
+
+
   
 </body>
 </html>
