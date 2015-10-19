@@ -150,6 +150,13 @@ div.dataTables_filter {
     border: none !important;
     width: 100% !important; }
 
+.bg-light {
+  background-color: #f5f5f5; }
+
+.payment-history table thead > tr > th:last-of-type, .payment-history table thead > tr > th:nth-last-of-type(2) {
+  width: 110px;
+  padding-right: 0; }
+
 .submit-application .no-top-border {
   border-top: none; }
 .submit-application .custom_wrng {

@@ -195,12 +195,23 @@ div.dataTables_filter {
 
 /* -------------- */
 .profile-pic {
-	    width: 100% !important;
-.thumbnail {
-   
-    margin: 14px auto !important;
-    border-radius: 0 !important;
-    border: none !important;
-    width: 100% !important;
+	width: 100% !important;
+	.thumbnail {
+
+		margin: 14px auto !important;
+		border-radius: 0 !important;
+		border: none !important;
+		width: 100% !important;
+	}
 }
+
+.bg-light {
+	background-color: #f5f5f5;
+}
+
+.payment-history {
+	table thead > tr > th:last-of-type, table thead > tr > th:nth-last-of-type(2) {
+    width: 110px;
+    padding-right: 0;
+}	
 }
