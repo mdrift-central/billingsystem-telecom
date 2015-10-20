@@ -104,7 +104,7 @@
         <section class="sidebar">
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active">
+            <li>
               <a href="dashboard.html">
                 <i class="fa fa-dashboard"></i><span>Dashboard</span>
               </a>
@@ -132,7 +132,7 @@
                 <span>Profile</span>
               </a>
             </li>
-            <li>
+            <li class="active">
               <a href="support.html">
                 <i class="fa fa-comments"></i>
                 <span>Support</span>
@@ -147,24 +147,94 @@
       <div class="content-wrapper finance accnt-balance">
         <section class="content-header">
           <h1>
-            Dashboard
+            Support
           </h1>
           <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-          </ol>
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                <li class="active"><i class="fa fa-comments"></i> Support</li>
+              </ol>
         </section>
 
-       <!--  <section class="content">
-         <div class="row">
-           <div class="col-md-12">
-             <div class="box box-primary" id="addl-data-subscbr-dtls">
-               <div class="box-body">
-       
-               </div>
-             </div>
-           </div>
-         </div>
-       </section> -->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <div class="pull-left">
+                    <h3 class="box-title">Issues Raised from Your User ID</h3>
+                  </div>
+                  <div class="pull-right">
+                    <button type="button" class="btn bg-maroon btn-flat" data-toggle="modal" data-target="#new-issue" ><i class="fa fa-plus-square"></i> New Issue</button>
+
+
+                  </div>
+                </div>
+                <div class="box-body">
+                  <table id="crm-list" class="table table-bordered table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th>Ticket ID</th>
+                        <th>Start Date</th>
+                        <th>Issue</th>
+                        
+                        <th>Status</th>
+                        <th>Close Date</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>4532KL1025</td>
+                        <td>07 Sept 2015 10:12:45</td>
+                        <td>No signal - modem indicates red</td>
+                        
+                        <td><span class="text-red">Open</span></td>
+                        <td></td>
+                        
+                      </tr>
+                      <tr>
+                        <td>3256KL1032</td>
+                        <td>01 Sept 2015 11:30:27</td>
+                        <td>Cannot login - error displaying</td>
+                        
+                        <td><span class="text-green">Closed</span></td>
+                        <td>02 Sept 2015 19:42:08</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>4643KL8790</td>
+                        <td>20 Aug 2015 20:12:39</td>
+                        <td>Connection breaks frequently</td>
+                        
+                        <td><span class="text-green">Closed</span></td>
+                        <td>22 Aug 2015 09:25:55</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>4209KL5432</td>
+                        <td>16 Aug 2015 11:36:33</td>
+                        <td>Login error</td>
+                        
+                        <td><span class="text-green">Closed</span></td>
+                        <td>17 Aug 2015 10:06:19</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>4956KL0976</td>
+                        <td>12 Aug 2015 16:14:32</td>
+                        <td>Signal breaking</td>
+                        
+                        <td><span class="text-green">Closed</span></td>
+                        <td>12 Aug 2015 20:10:12</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
@@ -173,6 +243,30 @@
         Copyright &copy; 2014-2015
       </footer>
     </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="new-issue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New Issue</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Describe Your Trouble:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+        <button type="button" class="btn bg-maroon btn-flat" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
   
   <script src="../../static/js/library/jquery-2.1.4.min.js"></script>
   <script src="../../static/js/library/bootstrap.js"></script>

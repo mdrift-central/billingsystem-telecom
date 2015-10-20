@@ -104,7 +104,7 @@
         <section class="sidebar">
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active">
+            <li>
               <a href="dashboard.html">
                 <i class="fa fa-dashboard"></i><span>Dashboard</span>
               </a>
@@ -115,7 +115,7 @@
                 <span>Account</span>
               </a>
             </li>
-            <li class="treeview">
+            <li class="treeview active">
               <a href="#">
                 <i class="fa fa-credit-card"></i>
                 <span>Billing</span>
@@ -123,7 +123,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="payment_history.html">Payment History</a></li>
-                <li><a href="data_usage.html">Data Usage</a></li>
+                <li class="active"><a href="data_usage.html">Data Usage</a></li>
               </ul>
             </li>
             <li>
@@ -144,27 +144,166 @@
         </section>
       </aside>
 
-      <div class="content-wrapper finance accnt-balance">
+      <div class="content-wrapper finance data-usage">
         <section class="content-header">
           <h1>
-            Dashboard
+            My Data Usage
           </h1>
-          <ol class="breadcrumb">
-            <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-          </ol>
+          
+           <ol class="breadcrumb">
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+                <li class="active"><i class="fa fa-credit-card"></i> Data Usage</li>
+              </ol>
         </section>
 
-       <!--  <section class="content">
-         <div class="row">
-           <div class="col-md-12">
-             <div class="box box-primary" id="addl-data-subscbr-dtls">
-               <div class="box-body">
-       
-               </div>
-             </div>
-           </div>
-         </div>
-       </section> -->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">My Account Details</h3>
+                </div>
+                <div class="box-body no-padding">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td><strong>User Name</strong></td>
+                        <td>Rahulgeorge.m</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Registration Date</strong></td>
+                        <td>10-Jul-2014</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Last Renewdate</strong></td>
+                        <td>05-Oct-2015</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Expiry Date</strong></td>
+                        <td>05-Oct-2015</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Package</strong></td>
+                        <td>FUP20Mbps_100GB</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Package Details</h3>
+                </div>
+                <div class="box-body no-padding">
+                   <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>&nbsp;</th>
+                          <th class="bg-light1">Allocated</th>
+                          <th>Used</th>
+                          <th class="bg-light1">Remaining</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td><strong class="text-primary">Time</strong></td>
+                          <td class="bg-light1">30 Days</td>
+                          <td>NA</td>
+                          <td class="bg-light1">NA</td>
+                        </tr>
+                        <tr>
+                          <td><strong class="text-primary">Data Transfer</strong></td>
+                          <td class="bg-light1">1024000</td>
+                          <td>6181.20</td>
+                          <td class="bg-light1">19265.25MB</td>
+                        </tr>
+                        <tr>
+                          <td><strong class="text-primary">Package Speed</strong></td>
+                          <td class="bg-light1">20480kbps</td>
+                          <td>Fallback Speed</td>
+                          <td class="bg-light1">2048kbps</td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td class="bg-light1">&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td class="bg-light1">&nbsp;</td>
+                        </tr>
+
+                        </tbody>
+                        </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+                    <div class="box box-default">
+                <div class="box-header">
+                  <h3 class="box-title">Section Details</h3>
+                </div>
+                <div class="box-body no-padding">
+                  <div class="box-body">
+                    <table id="table_sortable2" class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th class="no-sort">#</th>
+                          <th>IP Address</th>
+                          <th>Start Time</th>
+                          <th>End Time</th>
+                          <th>Duration</th>
+                          <th>Upload Data</th>
+                          <th>Download Data</th>
+                          <th>Total Data</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td>1</td>
+                          <td>112.133.192.83</td>
+                          <td>06-10-2015 14:33:10</td>
+                          <td>06-10-2015 14:48:41</td>
+                          <td>00:15:09</td>
+                          <td>90.69</td>
+                          <td>60.04</td>
+                          <td>150.73</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>112.133.192.83</td>
+                          <td>06-10-2015 14:33:10</td>
+                          <td>06-10-2015 14:48:41</td>
+                          <td>00:15:09</td>
+                          <td>90.69</td>
+                          <td>60.04</td>
+                          <td>150.73</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>112.133.192.83</td>
+                          <td>06-10-2015 14:33:10</td>
+                          <td>06-10-2015 14:48:41</td>
+                          <td>00:15:09</td>
+                          <td>90.69</td>
+                          <td>60.04</td>
+                          <td>150.73</td>
+                        </tr>
+                        <tr>
+                          <td colspan="7" class="text-right"><strong class="text-red">Total</strong></td>
+                          <td><strong class="text-red">452.19</strong></td>
+                        </tr>
+                         
+                        
+                      </tbody>
+                    </table>
+                  </div><!-- /.box-body -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <footer class="main-footer">
         <div class="pull-right hidden-xs">

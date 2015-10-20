@@ -193,6 +193,16 @@ div.dataTables_filter {
     margin-top: 6px;
 }
 
+.login-box {
+	opacity: 0;
+}
+
+.accnt-top-up {
+	.table > tbody > tr:first-of-type > td {
+		width: 300px;
+	}
+}
+
 /* -------------- */
 .profile-pic {
 	width: 100% !important;
@@ -208,10 +218,13 @@ div.dataTables_filter {
 .bg-light {
 	background-color: #f5f5f5;
 }
-
+.bg-light1 {
+	background-color: #FBFBFB;
+}
 .payment-history {
 	table thead > tr > th:last-of-type, table thead > tr > th:nth-last-of-type(2) {
-    width: 110px;
-    padding-right: 0;
-}	
+		width: 110px;
+		padding-right: 0;
+	}	
 }
+
