@@ -8,3 +8,5 @@ backup/
 .sass-cache
 
 *.css.map
+templates/lco_module
+templates/subscriber_module

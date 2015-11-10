@@ -127,12 +127,23 @@ div.dataTables_filter {
 .icheckbox_minimal-blue, .iradio_minimal-blue {
   margin: -2px 3px 0 0; }
 
-.login-logo a img {
-  margin-top: 0; }
-.login-logo a b {
-  color: white;
-  font-size: 24px;
-  margin-left: 10px; }
+.login-logo a {
+  position: relative; }
+  .login-logo a small {
+    color: white;
+    font-size: 14px;
+    clear: left;
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: -5px; }
+  .login-logo a img {
+    margin-top: 0; }
+  .login-logo a b {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; }
 
 .copyr {
   text-align: center;
@@ -165,6 +176,33 @@ div.dataTables_filter {
 .payment-history table thead > tr > th:last-of-type, .payment-history table thead > tr > th:nth-last-of-type(2) {
   width: 110px;
   padding-right: 0; }
+
+.offset-top-30 {
+  margin-top: 30px; }
+
+.box-cont {
+  margin: 0 20px; }
+  .box-cont h3 {
+    color: #3c8dbc;
+    font-size: 19px;
+    font-weight: bold; }
+  .box-cont a h3 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: bold; }
+
+.labelSpan {
+  display: block;
+  width: 100%; }
+
+.clearfix {
+  clear: both; }
+
+.custom-form .form-control[disabled], .custom-form fieldset[disabled] .form-control {
+  cursor: text;
+  /* background-color: #FFF; */ }
+.custom-form .stgt-line .with-border {
+  border-radius: 0 !important; }
 
 .submit-application .no-top-border {
   border-top: none; }

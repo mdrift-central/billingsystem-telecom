@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kerala Vision LCO Receipts</title>
+  <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">
+  <link rel="stylesheet" href="../../static/css/library/ionicons.css">
+
+  <link rel="stylesheet" href="../../static/css/library/AdminLTE.css">
+
+  <link rel="stylesheet" href="../../static/css/library/iCheck-minimal-blue.css">
+  <link rel="stylesheet" href="../../static/css/custom/style.css">
+
+  <!--[if lt IE 9]>
+        <script src="../../static/js/library/html5shiv.js"></script>
+        <script src="../../static/js/library/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <a><img src="../../static/images/kerala-vision-logo.png" alt=""><b>KERALA VISION</b>
+          <small>for Admin</small>
+        </a>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form action="dashboard.html" method="post">
+          <div class="form-group has-feedback">
+            <input type="email" class="form-control" placeholder="Email">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox" class="minimal"> Remember Me
+                </label>
+              </div>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+
+       
+        <a href="#">I forgot my password</a><br>
+        <!-- <a href="register.html" class="text-center">Register a new membership</a> -->
+
+      </div><!-- /.login-box-body -->
+      <span class="copyr">Copyright © Kerala Vision
+All rights reserved</span>
+    </div><!-- /.login-box -->
+  
+  <script src="../../static/js/library/jquery-2.1.4.min.js"></script>
+  <script src="../../static/js/library/bootstrap.js"></script>
+  <script src="../../static/js/library/icheck.min.js"></script>
+  
+  <script>
+      $(function () {
+       $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+    checkboxClass: 'icheckbox_minimal-blue',
+    radioClass: 'iradio_minimal-blue'
+  });
+       
+      });
+      window.onload=function(){
+         $('.login-box').animate({'opacity': 1}, 500);
+       }
+    </script>
+</body>
+</html>
