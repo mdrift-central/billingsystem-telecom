@@ -181,11 +181,15 @@ div.dataTables_filter {
   margin-top: 30px; }
 
 .box-cont {
-  margin: 0 20px; }
+  margin: 0 20px;
+  width: 75%; }
+  .box-cont td {
+    border-top: 1px solid transparent !important; }
   .box-cont h3 {
     color: #3c8dbc;
     font-size: 19px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 50px; }
   .box-cont a h3 {
     margin: 0;
     font-size: 19px;
@@ -265,21 +269,41 @@ label.form-style-sml {
 tr.brdr-no td {
   border-top: none !important; }
 
-.submit-application .no-top-border {
-  border-top: none; }
-.submit-application .custom_wrng {
-  font-size: 12px;
-  font-weight: normal; }
-.submit-application .box-title small {
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 5px; }
-.submit-application .text-normal {
-  font-size: 14px;
-  font-weight: 400;
-  cursor: pointer; }
-  .submit-application .text-normal .icheckbox_minimal-blue, .submit-application .text-normal .iradio_minimal-blue {
-    margin-top: -3px;
-    margin-right: 5px; }
+.add-lable {
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: none; }
+
+.collapsed-box.secndry-sec .add-lable {
+  cursor: pointer;
+  margin-bottom: 0;
+  display: block; }
+.collapsed-box.secndry-sec .box-title {
+  display: none; }
+
+.offset-top-100 {
+  margin-top: 100px; }
+
+.offset-left-10 {
+  margin-left: 10px; }
+
+.pullleft {
+  float: left; }
+
+.checkbox-list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .checkbox-list ul label {
+    font-weight: 300; }
+
+.valuefrml {
+  margin-top: 20px; }
+  .valuefrml textarea {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px; }
+
+/* @import "submit_application"; */
 
 /*# sourceMappingURL=style.css.map */

@@ -244,10 +244,15 @@ div.dataTables_filter {
 }
 .box-cont {
 	margin: 0 20px;
+    width: 75%;
+	td {
+    	border-top: 1px solid transparent !important;
+	}
 	h3 {
 		color: #3c8dbc;
 		font-size: 19px;
 		font-weight: bold;
+		margin-top: 50px;
 	}
 	a {
 		h3 {
@@ -340,3 +345,21 @@ label.form-style-sml {
 tr.brdr-no td {
 	border-top: none !important;
 }
+
+.add-lable {
+		cursor: pointer;
+		margin-bottom: 20px;
+		display: none;
+	}
+
+.collapsed-box.secndry-sec {
+	.add-lable {
+		cursor: pointer;
+		margin-bottom: 0;
+		display: block;
+	}
+	.box-title {
+		display: none;
+	}
+}
+

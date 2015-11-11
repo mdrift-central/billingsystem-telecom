@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create a transaction type</title>
+	<!--[if lt IE 9]>
+        <script src="../../static/js/library/html5shiv.js"></script>
+        <script src="../../static/js/library/respond.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="../../static/css/library/bootstrap.min.css">
+        <link rel="stylesheet" href="../../static/css/library/font-awesome.min.css">  
+        <link rel="stylesheet" href="../../static/css/custom/style.css">
+    </head>
+
+    <body class="hold-transition fixed skin-blue sidebar-mini">
+    	<div class="wrapper">
+    		<header class="main-header">
+
+    			<nav class="navbar navbar-inverse navbar-fixed-top">
+    				<div class="container">
+    					<div class="navbar-header">
+    						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    							<span class="sr-only">Toggle navigation</span>
+    							<span class="icon-bar"></span>
+    							<span class="icon-bar"></span>
+    							<span class="icon-bar"></span>
+    						</button>
+    						<a class="navbar-brand" href="#">Logo</a>
+    					</div>
+    					<div id="navbar" class="navbar-collapse collapse">
+    						<ul class="nav navbar-nav">
+    							<li class="dropdown">
+    								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">From Cost Center Type <span class="caret"></span></a>
+    								<ul class="dropdown-menu">
+    									<li><a href="#">Cost Center Type Model - Name1</a></li>
+    									<li><a href="#">Cost Center Type Model - Name2</a></li>
+    									<li><a href="#">Cost Center Type Model - Name3</a></li>
+    								</ul>
+    							</li>
+
+    							<li class="dropdown">
+    								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">To Cost Center Type <span class="caret"></span></a>
+    								<ul class="dropdown-menu">
+    									<li><a href="#">Cost Center Type Model - Name1</a></li>
+    									<li><a href="#">Cost Center Type Model - Name2</a></li>
+    									<li><a href="#">Cost Center Type Model - Name3</a></li>
+    								</ul>
+    							</li>
+    						</ul>
+    					</div><!--/.nav-collapse -->
+    				</div>
+    			</nav>
+    		</header>
+    		<div class="container">
+    			<section>
+    				<div class="panel panel-default offset-top-100">
+    					<div class="panel-body">
+    					<div class="section-block pullleft">
+    					<label for="">From</label>
+    					<div class="dropdown">
+    							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Cost Center Type
+    								<span class="caret"></span></button>
+    								<ul class="dropdown-menu">
+    									<li><a href="#">LCO</a></li>
+    									<li><a href="#">Distributor</a></li>
+    									<li><a href="#">Consumer</a></li>
+    									<li><a href="#">Admin KV</a></li>
+    								</ul>
+    							</div>
+    							</div>
+    							<div class="section-block offset-left-10 pullleft">
+    							<label for="">To</label>
+    							<div class="dropdown">
+    							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Cost Center Type
+    								<span class="caret"></span></button>
+    								<ul class="dropdown-menu">
+    									<li><a href="#">LCO</a></li>
+    									<li><a href="#">Distributor</a></li>
+    									<li><a href="#">Consumer</a></li>
+    									<li><a href="#">Admin KV</a></li>
+    								</ul>
+    							</div>
+    						</div>
+    						</div>
+    					</div>
+    				</section>
+    				<section>
+    					<div class="panel panel-default">
+    						<div class="panel-body">
+    							<h4>Tiers are the individual components to be computed</h4>
+    							<div class="section-block pullleft">
+    								<label for="">Select No. of tiers:</label>
+    								<div class="dropdown">
+    									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">No. of tiers:
+    										<span class="caret"></span></button>
+    										<ul class="dropdown-menu">
+    											<li><a href="#">0</a></li>
+    											<li><a href="#">1</a></li>
+    											<li><a href="#">2</a></li>
+    											<li><a href="#">3</a></li>
+    										</ul>
+    									</div>
+    								</div>
+
+    							</div>
+    						</div>
+    				</section>
+    				
+    				<section>
+    					<div class="panel panel-default">
+    						<div class="panel-body checkbox-list">
+    						<div class="col-lg-4">
+    							<ul>
+    								<li><label><input type="checkbox" value="Service Tax"> Service Tax</label></li>
+    								<li><label><input type="checkbox" value="VAT"> VAT</label></li>
+    								<li><label><input type="checkbox" value="Usage Charges"> Usage Charges</label></li>
+    								<li><label><input type="checkbox" value="Bonus"> Bonus</label></li>
+    							</ul> 
+    						</div> 
+    						<div class="col-lg-4"> 
+    							<ul> 
+    								<li><label><input type="checkbox" value="Discount"> Discount</label></li>
+    								<li><label><input type="checkbox" value="Commission"> Commission</label></li>
+    								<li><label><input type="checkbox" value="Village Tax"> Village Tax</label></li>
+    								<li><label><input type="checkbox" value="Group Bonus"> Group Bonus</label></li>
+    							</ul> 
+    						</div> 
+    						<div class="col-lg-4"> 
+    							<ul> 
+    								<li><label><input type="checkbox" value="Onam Bonus"> Onam Bonus</label></li>
+    								<li><label><input type="checkbox" value="Vishu Bonus"> Vishu Bonus</label></li>
+    								<li><label><input type="checkbox" value="Cristmas Bonus"> Cristmas Bonus</label></li>
+    								<li><label><input type="checkbox" value="Eid Bonus"> Eid Bonus</label></li>
+    							</ul>
+    						</div>
+    							<div class="col-lg-12 valuefrml">
+    								<textarea name="" ></textarea>
+    							</div>
+    						</div>
+    					</div>
+    				</section>
+    				<section>
+    					<div class="panel panel-default">
+    						<div class="panel-body checkbox-list">
+    						<div class="col-lg-4">
+    							<ul>
+    								<li><label><input type="checkbox" value="Service Tax"> Service Tax</label></li>
+    								<li><label><input type="checkbox" value="VAT"> VAT</label></li>
+    								<li><label><input type="checkbox" value="Usage Charges"> Usage Charges</label></li>
+    								<li><label><input type="checkbox" value="Bonus"> Bonus</label></li>
+    							</ul> 
+    						</div> 
+    						<div class="col-lg-4"> 
+    							<ul> 
+    								<li><label><input type="checkbox" value="Discount"> Discount</label></li>
+    								<li><label><input type="checkbox" value="Commission"> Commission</label></li>
+    								<li><label><input type="checkbox" value="Village Tax"> Village Tax</label></li>
+    								<li><label><input type="checkbox" value="Group Bonus"> Group Bonus</label></li>
+    							</ul> 
+    						</div> 
+    						<div class="col-lg-4"> 
+    							<ul> 
+    								<li><label><input type="checkbox" value="Onam Bonus"> Onam Bonus</label></li>
+    								<li><label><input type="checkbox" value="Vishu Bonus"> Vishu Bonus</label></li>
+    								<li><label><input type="checkbox" value="Cristmas Bonus"> Cristmas Bonus</label></li>
+    								<li><label><input type="checkbox" value="Eid Bonus"> Eid Bonus</label></li>
+    							</ul>
+    						</div>
+    							<div class="col-lg-12 valuefrml">
+    								<textarea name="" ></textarea>
+    							</div>
+    						</div>
+    					</div>
+    				</section>
+    			</div>
+    		</div>
+    	</body>
+    	<script src="../../static/js/library/jquery-2.1.4.min.js"></script>
+    	<script src="../../static/js/library/bootstrap.js"></script>
+    	<script>
+
+
+
+/*$('.checkbox-list input').change(function(){
+
+   $('.checkbox-list input').each(function() {
+   
+     	$('.valuefrml textarea').text($('.checkbox-list input').is( ":checked" ).val());
+    
+   });
+     
+    
+   
+    
+});*/
+
+
+/*$('.checkbox-list input').change(function(){
+
+    if($(this).attr('checked')){
+          $(this).val('TRUE');
+          $(this).parent().text()
+          
+     }else{
+          $(this).val('FALSE');
+     }
+ 
+ console.log($(this).val());
+
+    
+});
+*/
+
+    	
+    	</script>
+    	<html>
