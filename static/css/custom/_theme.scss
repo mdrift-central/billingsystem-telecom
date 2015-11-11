@@ -51,10 +51,10 @@ div.dataTables_filter {
 
 .application-status {
 	.dataTables_filter {
-	     display: none;
+		display: none;
 	}
 	.pad-tp-6 {
-		    padding-top: 6px;
+		padding-top: 6px;
 	}
 }
 
@@ -163,45 +163,45 @@ div.dataTables_filter {
 }
 
 .main-header .logo {
-    font-size: 14px !important;
-    font-weight: bold !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
 }
 
 .login-page, .register-page {
-    background: #367fa9;
+	background: #367fa9;
 }
 
 .icheckbox_minimal-blue, .iradio_minimal-blue {
-    margin: -2px 3px 0 0;
+	margin: -2px 3px 0 0;
 }
 .login-logo a {
 	position: relative;
 	small {
 		color: white;
-    	font-size: 14px;
-    	clear: left;
-    	display: block;
-    	float: right;
-    	position: absolute;
-    	right: 0;
-    	margin-top: -5px;
+		font-size: 14px;
+		clear: left;
+		display: block;
+		float: right;
+		position: absolute;
+		right: 0;
+		margin-top: -5px;
 	}
-		img {
-			margin-top: 0;
-		}
-		b {
+	img {
+		margin-top: 0;
+	}
+	b {
 		color: white;
-    	font-size: 24px;
-    	margin-left: 10px;
+		font-size: 24px;
+		margin-left: 10px;
 	}
 }
 
 .copyr {
 	text-align: center;
-    color: rgba(255, 255, 255, 0.67);
-    display: block;
-    font-size: 13px;
-    margin-top: 6px;
+	color: rgba(255, 255, 255, 0.67);
+	display: block;
+	font-size: 13px;
+	margin-top: 6px;
 }
 
 .login-box {
@@ -270,12 +270,73 @@ div.dataTables_filter {
 
 .custom-form {
 	.form-control[disabled], fieldset[disabled] .form-control {
-    cursor: text;
-    /* background-color: #FFF; */
+		cursor: text;
+		/* background-color: #FFF; */
+	}
+	.stgt-line {
+		.with-border {
+			border-radius: 0 !important;
+		}
+	}
 }
-.stgt-line {
-	.with-border {
-	border-radius: 0 !important;
+.offset-bottom-30 {
+	margin-bottom: 30px;
 }
+
+.offset-bottom-50 {
+	margin-bottom: 50px;
 }
+
+.offset-left-10 {
+	margin-left: 10px;
+}
+
+.offset-bt-0 {
+	margin-bottom: 0;
+}
+.brdr-bttm-0 {
+	@include border-bottom-radius(0);
+}
+.radius-0 {
+	@include border-radius(0);
+}
+
+.alert-msg {
+	position: fixed;
+    z-index: 99;
+    display: none;
+}
+
+label.form-style {
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #808080;
+    background-color: #F7F7F7;
+    /* border: 1px solid #ccc; */
+}
+
+label.form-style-sml {
+    display: block;
+    width: 100%;
+    height: 34px;
+    /* padding: 6px 12px; */
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-weight: 400;
+    color: #808080;
+}
+.sml-title-modal {
+	background-color: #F7F7F7;
+	h5 {
+		margin: 0;
+		font-size: 16px;
+    	color: #367fa9;
+	}
+}
+tr.brdr-no td {
+	border-top: none !important;
 }

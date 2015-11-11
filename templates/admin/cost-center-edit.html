@@ -172,13 +172,9 @@
           </aside>
 
           <div class="content-wrapper">
-          <div class="alert alert-success alert-dismissable alert-msg radius-0" id="create-success">
-                    <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button> -->
-                    Cost center successfully created..!
-                  </div>
             <section class="content-header">
               <h1>
-                Cost Center- Create
+                Cost Center- Edit
               </h1>
               <ol class="breadcrumb">
                 <li class="active"><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
@@ -213,8 +209,8 @@
                             <div class="form-group">
                               <label>Linked To:</label>
                               <select class="form-control select">
-                                <option selected="selected" value="">Select Cost Center CODE</option>
-                                <option value="001">589652</option>
+                                <option value="">Select Cost Center CODE</option>
+                                <option selected="selected" value="001">589652</option>
                                 <option value="002">1589632</option>
                                 <option value="003">7689098</option>
                                 <option value="004">326589</option>
@@ -228,10 +224,10 @@
                             <div class="form-group">
                               <label>Cost Center Type:</label>
                               <select class="form-control ">
-                                <option selected="selected" value="">Select Cost Center Type</option>
+                                <option value="">Select Cost Center Type</option>
                                 <option value="001">LCO</option>
                                 <option value="002">Distributor</option>
-                                <option value="003">Consumer</option>
+                                <option selected="selected" value="003">Consumer</option>
                                 <option value="004">Other</option>
                               </select>
                             </div>
@@ -252,21 +248,21 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label>IFSC Code:</label>
-                            <input class="form-control">
+                            <input class="form-control" value="JP10203445">
                           </div>
                         </div>
 
                         <div class="col-md-6">
                           <div class="form-group">
                             <label>Bank Name:</label>
-                            <input class="form-control">
+                            <input class="form-control" value="Axis Bank">
                           </div>
                         </div>
 
                         <div class="col-md-12">
                           <div class="form-group">
                             <label>Bank Address:</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3">Sample Address1</textarea>
                           </div>
                         </div>
                       </div>
@@ -283,21 +279,21 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label>IFSC Code:</label>
-                            <input class="form-control">
+                            <input class="form-control" value="JP10203445">
                           </div>
                         </div>
 
                         <div class="col-md-6">
                           <div class="form-group">
                             <label>Bank Name:</label>
-                            <input class="form-control">
+                            <input class="form-control" value="Axis Bank">
                           </div>
                         </div>
 
                         <div class="col-md-12">
                           <div class="form-group">
                             <label>Bank Address:</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3">Sample Address2</textarea>
                           </div>
                         </div>
 
@@ -338,55 +334,35 @@
 
                   </div>
                   <div class="col-md-2 offset-top-30 offset-bottom-50 clearfix">
-                  <button type="button" class="btn bg-maroon btn-block btn-flat offset-left-10" id="createBttn">Create</button>
-                  </div>
+                    <button type="button" class="btn bg-maroon btn-block btn-flat offset-left-10" id="createBttn" data-toggle="modal" data-target="#confirmModal">Save Changes</button>
 
+                  </div>
+                  <div class="col-md-2 offset-top-30 offset-bottom-50">
+                    <button type="button" class="btn btn-default btn-block btn-flat offset-left-10" id="createBttn">Discard Changes</button>
+                  </div>
                 </div>
-                <!-- <div class="box box-primary stgt-line">
-                  <div class="box-header with-border">
-                    <h3 class="box-title">Search Transactions</h3>                  
-                  </div>
-                
-                  <div class="box-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="box-body">
-                          <div class="row">
-                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                              <div class="form-group">
-                                <label>Date Range</label>
-                                <div class="input-group">
-                                  <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                  </div>
-                                  <input type="text" class="form-control pull-right" id="dateRange" value="">
-                                </div>
-                
-                              </div>
-                            </div>
-                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                              <div class="form-group">
-                                <label>Transaction Value</label>
-                                <input type="text" class="form-control" value="">
-                              </div>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                              <div class="form-group">
-                                <label>&nbsp;</label>
-                                <div class="clearfix"></div>
-                                <button type="button" class="btn bg-maroon btn-block btn-flat" id="">Search</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>           
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
               </div>
 
             </section>
+          </div>
+
+          <div id="confirmModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                  <p class="text-danger">The changes permanently perform, kindly confirm</p>
+                  
+                </div>
+                <div class="modal-footer clearfix">
+                  <a href="#" class="btn btn-primary">Ok</a>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
           </div>
           <footer class="main-footer">
             <div class="pull-right hidden-xs">
@@ -418,9 +394,9 @@
                 setTimeout(function(){
                   $('.alert-msg').fadeOut();
                   setTimeout(function(){
-                  window.location.replace("dashboard.html");
+                    window.location.replace("dashboard.html");
                   }, 800);
-                 }, 3000);
+                }, 3000);
               });
               
 
